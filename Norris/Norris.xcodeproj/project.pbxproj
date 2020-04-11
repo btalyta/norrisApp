@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
+		9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
+		9FAADD5424411810007C9B27 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* ListViewController.swift */; };
+		9FAADD5A24411810007C9B27 /* Norris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */; };
+		9FAADD5C24411815007C9B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADD5B24411815007C9B27 /* Assets.xcassets */; };
+		9FAADD5F24411815007C9B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADD5D24411815007C9B27 /* LaunchScreen.storyboard */; };
+		9FAADD6A24411815007C9B27 /* NorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD6924411815007C9B27 /* NorrisTests.swift */; };
+		9FAADD7524411815007C9B27 /* NorrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD7424411815007C9B27 /* NorrisUITests.swift */; };
+		9FAADD8624420957007C9B27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8524420957007C9B27 /* AppCoordinator.swift */; };
+		E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */; };
+		EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */; };
+		FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FAADD6624411815007C9B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FAADD4424411810007C9B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FAADD4B24411810007C9B27;
+			remoteInfo = Norris;
+		};
+		9FAADD7124411815007C9B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FAADD4424411810007C9B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FAADD4B24411810007C9B27;
+			remoteInfo = Norris;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021F58670114001DF6544B39 /* Pods-Norris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris.release.xcconfig"; path = "Target Support Files/Pods-Norris/Pods-Norris.release.xcconfig"; sourceTree = "<group>"; };
+		319C4D199C830CA9CA3CE03F /* Pods-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisUITests/Pods-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6020C0A1F87E6B9A7F2701 /* Pods-Norris-NorrisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.release.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorrisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BF4B49B61FBF5B627F7DE7 /* Pods-Norris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris.debug.xcconfig"; path = "Target Support Files/Pods-Norris/Pods-Norris.debug.xcconfig"; sourceTree = "<group>"; };
+		9321E4FE4D7855B0548F769D /* Pods-NorrisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.release.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.release.xcconfig"; sourceTree = "<group>"; };
+		93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorrisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAADD4C24411810007C9B27 /* Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAADD4F24411810007C9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FAADD5124411810007C9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FAADD5324411810007C9B27 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9FAADD5924411810007C9B27 /* Norris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Norris.xcdatamodel; sourceTree = "<group>"; };
+		9FAADD5B24411815007C9B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FAADD5E24411815007C9B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FAADD6024411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAADD6524411815007C9B27 /* NorrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAADD6924411815007C9B27 /* NorrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisTests.swift; sourceTree = "<group>"; };
+		9FAADD6B24411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAADD7024411815007C9B27 /* NorrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAADD7424411815007C9B27 /* NorrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisUITests.swift; sourceTree = "<group>"; };
+		9FAADD7624411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAADD8524420957007C9B27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD64D4C81D940A6801EDD13D /* Pods-NorrisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisUITests.release.xcconfig"; path = "Target Support Files/Pods-NorrisUITests/Pods-NorrisUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FAADD4924411810007C9B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6224411815007C9B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6D24411815007C9B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C6B4682C95E840F70F95836 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68BF4B49B61FBF5B627F7DE7 /* Pods-Norris.debug.xcconfig */,
+				021F58670114001DF6544B39 /* Pods-Norris.release.xcconfig */,
+				AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */,
+				3B6020C0A1F87E6B9A7F2701 /* Pods-Norris-NorrisUITests.release.xcconfig */,
+				ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */,
+				9321E4FE4D7855B0548F769D /* Pods-NorrisTests.release.xcconfig */,
+				319C4D199C830CA9CA3CE03F /* Pods-NorrisUITests.debug.xcconfig */,
+				FD64D4C81D940A6801EDD13D /* Pods-NorrisUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DAE2A9DE7EF8E50E33F2BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */,
+				4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */,
+				93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FAADD4324411810007C9B27 = {
+			isa = PBXGroup;
+			children = (
+				9FAADD4E24411810007C9B27 /* Norris */,
+				9FAADD6824411815007C9B27 /* NorrisTests */,
+				9FAADD7324411815007C9B27 /* NorrisUITests */,
+				9FAADD4D24411810007C9B27 /* Products */,
+				1C6B4682C95E840F70F95836 /* Pods */,
+				5DAE2A9DE7EF8E50E33F2BEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FAADD4D24411810007C9B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD4C24411810007C9B27 /* Norris.app */,
+				9FAADD6524411815007C9B27 /* NorrisTests.xctest */,
+				9FAADD7024411815007C9B27 /* NorrisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FAADD4E24411810007C9B27 /* Norris */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD822442088A007C9B27 /* Resource */,
+				9FAADD8724420AF6007C9B27 /* ListView */,
+				9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */,
+			);
+			path = Norris;
+			sourceTree = "<group>";
+		};
+		9FAADD6824411815007C9B27 /* NorrisTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD6924411815007C9B27 /* NorrisTests.swift */,
+				9FAADD6B24411815007C9B27 /* Info.plist */,
+			);
+			path = NorrisTests;
+			sourceTree = "<group>";
+		};
+		9FAADD7324411815007C9B27 /* NorrisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD7424411815007C9B27 /* NorrisUITests.swift */,
+				9FAADD7624411815007C9B27 /* Info.plist */,
+			);
+			path = NorrisUITests;
+			sourceTree = "<group>";
+		};
+		9FAADD822442088A007C9B27 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD83244208D4007C9B27 /* App */,
+				9FAADD5B24411815007C9B27 /* Assets.xcassets */,
+				9FAADD5D24411815007C9B27 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9FAADD83244208D4007C9B27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD4F24411810007C9B27 /* AppDelegate.swift */,
+				9FAADD5124411810007C9B27 /* SceneDelegate.swift */,
+				9FAADD6024411815007C9B27 /* Info.plist */,
+				9FAADD8524420957007C9B27 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FAADD8724420AF6007C9B27 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD5324411810007C9B27 /* ListViewController.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FAADD4B24411810007C9B27 /* Norris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FAADD7924411815007C9B27 /* Build configuration list for PBXNativeTarget "Norris" */;
+			buildPhases = (
+				6DAE31094863958ED78FE698 /* [CP] Check Pods Manifest.lock */,
+				9FAADD4824411810007C9B27 /* Sources */,
+				9FAADD4924411810007C9B27 /* Frameworks */,
+				9FAADD4A24411810007C9B27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Norris;
+			productName = Norris;
+			productReference = 9FAADD4C24411810007C9B27 /* Norris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FAADD6424411815007C9B27 /* NorrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FAADD7C24411815007C9B27 /* Build configuration list for PBXNativeTarget "NorrisTests" */;
+			buildPhases = (
+				D5418F819E588F68226F7F9E /* [CP] Check Pods Manifest.lock */,
+				9FAADD6124411815007C9B27 /* Sources */,
+				9FAADD6224411815007C9B27 /* Frameworks */,
+				9FAADD6324411815007C9B27 /* Resources */,
+				EDA336A2BA0B8F0504539F32 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FAADD6724411815007C9B27 /* PBXTargetDependency */,
+			);
+			name = NorrisTests;
+			productName = NorrisTests;
+			productReference = 9FAADD6524411815007C9B27 /* NorrisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FAADD6F24411815007C9B27 /* NorrisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FAADD7F24411815007C9B27 /* Build configuration list for PBXNativeTarget "NorrisUITests" */;
+			buildPhases = (
+				4F867C1686111C252CF89C96 /* [CP] Check Pods Manifest.lock */,
+				9FAADD6C24411815007C9B27 /* Sources */,
+				9FAADD6D24411815007C9B27 /* Frameworks */,
+				9FAADD6E24411815007C9B27 /* Resources */,
+				D92DCF3F7A3C8C69B1CBC8B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FAADD7224411815007C9B27 /* PBXTargetDependency */,
+			);
+			name = NorrisUITests;
+			productName = NorrisUITests;
+			productReference = 9FAADD7024411815007C9B27 /* NorrisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FAADD4424411810007C9B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Bárbara Souza";
+				TargetAttributes = {
+					9FAADD4B24411810007C9B27 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					9FAADD6424411815007C9B27 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 9FAADD4B24411810007C9B27;
+					};
+					9FAADD6F24411815007C9B27 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 9FAADD4B24411810007C9B27;
+					};
+				};
+			};
+			buildConfigurationList = 9FAADD4724411810007C9B27 /* Build configuration list for PBXProject "Norris" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FAADD4324411810007C9B27;
+			productRefGroup = 9FAADD4D24411810007C9B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FAADD4B24411810007C9B27 /* Norris */,
+				9FAADD6424411815007C9B27 /* NorrisTests */,
+				9FAADD6F24411815007C9B27 /* NorrisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FAADD4A24411810007C9B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAADD5F24411815007C9B27 /* LaunchScreen.storyboard in Resources */,
+				9FAADD5C24411815007C9B27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6324411815007C9B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6E24411815007C9B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F867C1686111C252CF89C96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NorrisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAE31094863958ED78FE698 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Norris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5418F819E588F68226F7F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NorrisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D92DCF3F7A3C8C69B1CBC8B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisUITests/Pods-NorrisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisUITests/Pods-NorrisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NorrisUITests/Pods-NorrisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA336A2BA0B8F0504539F32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisTests/Pods-NorrisTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NorrisTests/Pods-NorrisTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NorrisTests/Pods-NorrisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FAADD4824411810007C9B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAADD5A24411810007C9B27 /* Norris.xcdatamodeld in Sources */,
+				9FAADD5424411810007C9B27 /* ListViewController.swift in Sources */,
+				9FAADD8624420957007C9B27 /* AppCoordinator.swift in Sources */,
+				9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */,
+				9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6124411815007C9B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAADD6A24411815007C9B27 /* NorrisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAADD6C24411815007C9B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAADD7524411815007C9B27 /* NorrisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FAADD6724411815007C9B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FAADD4B24411810007C9B27 /* Norris */;
+			targetProxy = 9FAADD6624411815007C9B27 /* PBXContainerItemProxy */;
+		};
+		9FAADD7224411815007C9B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FAADD4B24411810007C9B27 /* Norris */;
+			targetProxy = 9FAADD7124411815007C9B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FAADD5D24411815007C9B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FAADD5E24411815007C9B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FAADD7724411815007C9B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		9FAADD7824411815007C9B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FAADD7A24411815007C9B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68BF4B49B61FBF5B627F7DE7 /* Pods-Norris.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = Norris/Resource/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.Norris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9FAADD7B24411815007C9B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021F58670114001DF6544B39 /* Pods-Norris.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = Norris/Resource/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.Norris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FAADD7D24411815007C9B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = NorrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Norris.app/Norris";
+			};
+			name = Debug;
+		};
+		9FAADD7E24411815007C9B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9321E4FE4D7855B0548F769D /* Pods-NorrisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = NorrisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Norris.app/Norris";
+			};
+			name = Release;
+		};
+		9FAADD8024411815007C9B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319C4D199C830CA9CA3CE03F /* Pods-NorrisUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = NorrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Norris;
+			};
+			name = Debug;
+		};
+		9FAADD8124411815007C9B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD64D4C81D940A6801EDD13D /* Pods-NorrisUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD42R8FHUC;
+				INFOPLIST_FILE = NorrisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Norris;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FAADD4724411810007C9B27 /* Build configuration list for PBXProject "Norris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FAADD7724411815007C9B27 /* Debug */,
+				9FAADD7824411815007C9B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FAADD7924411815007C9B27 /* Build configuration list for PBXNativeTarget "Norris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FAADD7A24411815007C9B27 /* Debug */,
+				9FAADD7B24411815007C9B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FAADD7C24411815007C9B27 /* Build configuration list for PBXNativeTarget "NorrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FAADD7D24411815007C9B27 /* Debug */,
+				9FAADD7E24411815007C9B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FAADD7F24411815007C9B27 /* Build configuration list for PBXNativeTarget "NorrisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FAADD8024411815007C9B27 /* Debug */,
+				9FAADD8124411815007C9B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FAADD5924411810007C9B27 /* Norris.xcdatamodel */,
+			);
+			currentVersion = 9FAADD5924411810007C9B27 /* Norris.xcdatamodel */;
+			path = Norris.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9FAADD4424411810007C9B27 /* Project object */;
+}
