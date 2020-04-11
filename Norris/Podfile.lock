@@ -1,0 +1,67 @@
+PODS:
+  - Cuckoo (1.3.2):
+    - Cuckoo/Swift (= 1.3.2)
+  - Cuckoo/Swift (1.3.2)
+  - iOSSnapshotTestCase (6.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
+  - iOSSnapshotTestCase/Core (6.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (6.2.0):
+    - iOSSnapshotTestCase/Core
+  - KIF (3.7.9):
+    - KIF/Core (= 3.7.9)
+  - KIF/Core (3.7.9)
+  - Nimble (8.0.7)
+  - Nimble-Snapshots (8.2.0):
+    - Nimble-Snapshots/Core (= 8.2.0)
+  - Nimble-Snapshots/Core (8.2.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
+  - OHHTTPStubs/Core (9.0.0)
+  - OHHTTPStubs/Default (9.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (9.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (9.0.0)
+  - OHHTTPStubs/Swift (9.0.0):
+    - OHHTTPStubs/Default
+  - Quick (2.2.0)
+  - SwiftLint (0.39.2)
+
+DEPENDENCIES:
+  - Cuckoo
+  - KIF
+  - Nimble
+  - Nimble-Snapshots
+  - OHHTTPStubs/Swift
+  - Quick
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Cuckoo
+    - iOSSnapshotTestCase
+    - KIF
+    - Nimble
+    - Nimble-Snapshots
+    - OHHTTPStubs
+    - Quick
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Cuckoo: 57f71c6616b6b08cd9fe27f803da056fb619ff3e
+  iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
+  KIF: 350f96fb4205972a10e4c1a45774d48b2d8482d8
+  Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  Nimble-Snapshots: 7a1133b2dcce853ecdf1026f0a17fedf03bc41c9
+  OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+
+PODFILE CHECKSUM: 51cf56b01b73ff6e7b078c212395124e17b8ecd3
+
+COCOAPODS: 1.9.1
