@@ -1,5 +1,3 @@
-name: Tests
-
 on:
   push:
     branches:
@@ -18,9 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
-        xcode: ['/Applications/Xcode_11.3.app/Contents/Developer']
-    
+        destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 8']
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -29,7 +25,7 @@ jobs:
         env:
           DEVELOPER_DIR: ${{ matrix.xcode }} 
       - name: Build and test
-        run: bundle exec fastlane scan --destination "${destination}" --scheme "Norris"
+        run: xcodebuild clean test -workspace Norris.xcworkspace -scheme Norris -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
           destination: ${{ matrix.destination }}
           DEVELOP_DIR: ${{ matrix.xcode }}
