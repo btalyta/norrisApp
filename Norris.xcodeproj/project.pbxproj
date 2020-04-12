@@ -23,6 +23,16 @@
 		9FAADD97244292E1007C9B27 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */; };
 		9FAADD9B24429E7A007C9B27 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */; };
 		9FAADD9D2442B005007C9B27 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */; };
+		9FAADDA024435320007C9B27 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9F24435320007C9B27 /* TagView.swift */; };
+		9FAADDA42443549D007C9B27 /* chint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADDA22443549D007C9B27 /* chint.ttf */; };
+		9FAADDA52443549D007C9B27 /* chinrg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADDA32443549D007C9B27 /* chinrg.ttf */; };
+		9FAADDA72443553E007C9B27 /* NorrisFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDA62443553E007C9B27 /* NorrisFonts.swift */; };
+		9FAADDAA24435844007C9B27 /* NorrisColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDA924435844007C9B27 /* NorrisColors.swift */; };
+		9FAADDAC24435CF8007C9B27 /* chinrg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADDA32443549D007C9B27 /* chinrg.ttf */; };
+		9FAADDAD24435CFB007C9B27 /* chint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADDA22443549D007C9B27 /* chint.ttf */; };
+		9FAADDB024435D1B007C9B27 /* NorrisFontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDAF24435D1B007C9B27 /* NorrisFontsTests.swift */; };
+		9FAADDB324436087007C9B27 /* NorrisColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDB224436087007C9B27 /* NorrisColorsTests.swift */; };
+		9FAADDB62443619D007C9B27 /* TagViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDB52443619D007C9B27 /* TagViewTests.swift */; };
 		E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */; };
 		EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */; };
 		FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */; };
@@ -75,6 +85,14 @@
 		9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
 		9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
+		9FAADD9F24435320007C9B27 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		9FAADDA22443549D007C9B27 /* chint.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chint.ttf; sourceTree = "<group>"; };
+		9FAADDA32443549D007C9B27 /* chinrg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chinrg.ttf; sourceTree = "<group>"; };
+		9FAADDA62443553E007C9B27 /* NorrisFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisFonts.swift; sourceTree = "<group>"; };
+		9FAADDA924435844007C9B27 /* NorrisColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisColors.swift; sourceTree = "<group>"; };
+		9FAADDAF24435D1B007C9B27 /* NorrisFontsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisFontsTests.swift; sourceTree = "<group>"; };
+		9FAADDB224436087007C9B27 /* NorrisColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisColorsTests.swift; sourceTree = "<group>"; };
+		9FAADDB52443619D007C9B27 /* TagViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewTests.swift; sourceTree = "<group>"; };
 		AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +180,7 @@
 				9FAADD822442088A007C9B27 /* Resource */,
 				9FAADD88244260C2007C9B27 /* Networking */,
 				9FAADD8724420AF6007C9B27 /* ListView */,
+				9FAADD9E244352ED007C9B27 /* TagView */,
 				9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */,
 			);
 			path = Norris;
@@ -172,6 +191,8 @@
 			children = (
 				9FAADD95244292E1007C9B27 /* CuckooMocks */,
 				9FAADD9924429DC9007C9B27 /* Networking */,
+				9FAADDAB24435CE7007C9B27 /* Resource */,
+				9FAADDB42443618B007C9B27 /* TagView */,
 				9FAADD6B24411815007C9B27 /* Info.plist */,
 			);
 			path = NorrisTests;
@@ -190,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				9FAADD83244208D4007C9B27 /* App */,
+				9FAADDA12443547B007C9B27 /* Fonts */,
+				9FAADDA824435831007C9B27 /* Colors */,
 				9FAADD5B24411815007C9B27 /* Assets.xcassets */,
 				9FAADD5D24411815007C9B27 /* LaunchScreen.storyboard */,
 			);
@@ -242,6 +265,65 @@
 				9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9FAADD9E244352ED007C9B27 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD9F24435320007C9B27 /* TagView.swift */,
+			);
+			path = TagView;
+			sourceTree = "<group>";
+		};
+		9FAADDA12443547B007C9B27 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDA32443549D007C9B27 /* chinrg.ttf */,
+				9FAADDA22443549D007C9B27 /* chint.ttf */,
+				9FAADDA62443553E007C9B27 /* NorrisFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9FAADDA824435831007C9B27 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDA924435844007C9B27 /* NorrisColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		9FAADDAB24435CE7007C9B27 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDAE24435D06007C9B27 /* Fonts */,
+				9FAADDB124436064007C9B27 /* Colors */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9FAADDAE24435D06007C9B27 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDAF24435D1B007C9B27 /* NorrisFontsTests.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9FAADDB124436064007C9B27 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDB224436087007C9B27 /* NorrisColorsTests.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		9FAADDB42443618B007C9B27 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADDB52443619D007C9B27 /* TagViewTests.swift */,
+			);
+			path = TagView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +438,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FAADD5F24411815007C9B27 /* LaunchScreen.storyboard in Resources */,
+				9FAADDA52443549D007C9B27 /* chinrg.ttf in Resources */,
 				9FAADD5C24411815007C9B27 /* Assets.xcassets in Resources */,
+				9FAADDA42443549D007C9B27 /* chint.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +448,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAADDAC24435CF8007C9B27 /* chinrg.ttf in Resources */,
+				9FAADDAD24435CFB007C9B27 /* chint.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,13 +606,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAADDA72443553E007C9B27 /* NorrisFonts.swift in Sources */,
 				9FAADD5A24411810007C9B27 /* Norris.xcdatamodeld in Sources */,
 				9FAADD5424411810007C9B27 /* ListViewController.swift in Sources */,
+				9FAADDA024435320007C9B27 /* TagView.swift in Sources */,
 				9FAADD8624420957007C9B27 /* AppCoordinator.swift in Sources */,
 				9FAADD8C244264EE007C9B27 /* HttpClient.swift in Sources */,
 				9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */,
 				9FAADD9024427533007C9B27 /* HttpRequest.swift in Sources */,
 				9FAADD8E24426DBA007C9B27 /* APIError.swift in Sources */,
+				9FAADDAA24435844007C9B27 /* NorrisColors.swift in Sources */,
 				9FAADD9224427694007C9B27 /* NetworkingProtocols.swift in Sources */,
 				9FAADD8A244262EF007C9B27 /* RequestMethod.swift in Sources */,
 				9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */,
@@ -540,6 +629,9 @@
 				9FAADD9D2442B005007C9B27 /* HttpRequestTests.swift in Sources */,
 				9FAADD9B24429E7A007C9B27 /* HttpClientTests.swift in Sources */,
 				9FAADD97244292E1007C9B27 /* GeneratedMocks.swift in Sources */,
+				9FAADDB324436087007C9B27 /* NorrisColorsTests.swift in Sources */,
+				9FAADDB024435D1B007C9B27 /* NorrisFontsTests.swift in Sources */,
+				9FAADDB62443619D007C9B27 /* TagViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
