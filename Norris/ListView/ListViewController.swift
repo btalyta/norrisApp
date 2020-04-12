@@ -15,6 +15,4 @@ class ListViewController: UIViewController {
         view.backgroundColor = .blue
     }
 
-
 }
-

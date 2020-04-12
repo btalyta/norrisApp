@@ -13,9 +13,16 @@
 		9FAADD5A24411810007C9B27 /* Norris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */; };
 		9FAADD5C24411815007C9B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADD5B24411815007C9B27 /* Assets.xcassets */; };
 		9FAADD5F24411815007C9B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAADD5D24411815007C9B27 /* LaunchScreen.storyboard */; };
-		9FAADD6A24411815007C9B27 /* NorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD6924411815007C9B27 /* NorrisTests.swift */; };
 		9FAADD7524411815007C9B27 /* NorrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD7424411815007C9B27 /* NorrisUITests.swift */; };
 		9FAADD8624420957007C9B27 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8524420957007C9B27 /* AppCoordinator.swift */; };
+		9FAADD8A244262EF007C9B27 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD89244262EF007C9B27 /* RequestMethod.swift */; };
+		9FAADD8C244264EE007C9B27 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8B244264EE007C9B27 /* HttpClient.swift */; };
+		9FAADD8E24426DBA007C9B27 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8D24426DBA007C9B27 /* APIError.swift */; };
+		9FAADD9024427533007C9B27 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8F24427533007C9B27 /* HttpRequest.swift */; };
+		9FAADD9224427694007C9B27 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9124427694007C9B27 /* NetworkingProtocols.swift */; };
+		9FAADD97244292E1007C9B27 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */; };
+		9FAADD9B24429E7A007C9B27 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */; };
+		9FAADD9D2442B005007C9B27 /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */; };
 		E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */; };
 		EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */; };
 		FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */; };
@@ -55,12 +62,19 @@
 		9FAADD5E24411815007C9B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FAADD6024411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FAADD6524411815007C9B27 /* NorrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FAADD6924411815007C9B27 /* NorrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisTests.swift; sourceTree = "<group>"; };
 		9FAADD6B24411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FAADD7024411815007C9B27 /* NorrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAADD7424411815007C9B27 /* NorrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorrisUITests.swift; sourceTree = "<group>"; };
 		9FAADD7624411815007C9B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FAADD8524420957007C9B27 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9FAADD89244262EF007C9B27 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		9FAADD8B244264EE007C9B27 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		9FAADD8D24426DBA007C9B27 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		9FAADD8F24427533007C9B27 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		9FAADD9124427694007C9B27 /* NetworkingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
+		9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
+		9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
 		AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				9FAADD822442088A007C9B27 /* Resource */,
+				9FAADD88244260C2007C9B27 /* Networking */,
 				9FAADD8724420AF6007C9B27 /* ListView */,
 				9FAADD5824411810007C9B27 /* Norris.xcdatamodeld */,
 			);
@@ -155,7 +170,8 @@
 		9FAADD6824411815007C9B27 /* NorrisTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FAADD6924411815007C9B27 /* NorrisTests.swift */,
+				9FAADD95244292E1007C9B27 /* CuckooMocks */,
+				9FAADD9924429DC9007C9B27 /* Networking */,
 				9FAADD6B24411815007C9B27 /* Info.plist */,
 			);
 			path = NorrisTests;
@@ -199,6 +215,35 @@
 			path = ListView;
 			sourceTree = "<group>";
 		};
+		9FAADD88244260C2007C9B27 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD9124427694007C9B27 /* NetworkingProtocols.swift */,
+				9FAADD89244262EF007C9B27 /* RequestMethod.swift */,
+				9FAADD8B244264EE007C9B27 /* HttpClient.swift */,
+				9FAADD8D24426DBA007C9B27 /* APIError.swift */,
+				9FAADD8F24427533007C9B27 /* HttpRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9FAADD95244292E1007C9B27 /* CuckooMocks */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */,
+			);
+			path = CuckooMocks;
+			sourceTree = "<group>";
+		};
+		9FAADD9924429DC9007C9B27 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */,
+				9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +252,7 @@
 			buildConfigurationList = 9FAADD7924411815007C9B27 /* Build configuration list for PBXNativeTarget "Norris" */;
 			buildPhases = (
 				6DAE31094863958ED78FE698 /* [CP] Check Pods Manifest.lock */,
+				9FAADD9824429423007C9B27 /* SwiftLint */,
 				9FAADD4824411810007C9B27 /* Sources */,
 				9FAADD4924411810007C9B27 /* Frameworks */,
 				9FAADD4A24411810007C9B27 /* Resources */,
@@ -229,6 +275,7 @@
 				9FAADD6224411815007C9B27 /* Frameworks */,
 				9FAADD6324411815007C9B27 /* Resources */,
 				EDA336A2BA0B8F0504539F32 /* [CP] Embed Pods Frameworks */,
+				9FAADD9324427EC9007C9B27 /* Mock */,
 			);
 			buildRules = (
 			);
@@ -374,6 +421,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FAADD9324427EC9007C9B27 /* Mock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Mock;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file; change \"${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name\nOUTPUT_FILE=\"./${PROJECT_NAME}Tests/CuckooMocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory; change \"${PROJECT_NAME}\" to your project's root source folder, if it's not the default name\nINPUT_DIR=\"./${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files; include as many input files as you'd like to create mocks for\n${PODS_ROOT}/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkingProtocols.swift\"\n";
+		};
+		9FAADD9824429423007C9B27 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		D5418F819E588F68226F7F9E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,7 +523,12 @@
 				9FAADD5A24411810007C9B27 /* Norris.xcdatamodeld in Sources */,
 				9FAADD5424411810007C9B27 /* ListViewController.swift in Sources */,
 				9FAADD8624420957007C9B27 /* AppCoordinator.swift in Sources */,
+				9FAADD8C244264EE007C9B27 /* HttpClient.swift in Sources */,
 				9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */,
+				9FAADD9024427533007C9B27 /* HttpRequest.swift in Sources */,
+				9FAADD8E24426DBA007C9B27 /* APIError.swift in Sources */,
+				9FAADD9224427694007C9B27 /* NetworkingProtocols.swift in Sources */,
+				9FAADD8A244262EF007C9B27 /* RequestMethod.swift in Sources */,
 				9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +537,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FAADD6A24411815007C9B27 /* NorrisTests.swift in Sources */,
+				9FAADD9D2442B005007C9B27 /* HttpRequestTests.swift in Sources */,
+				9FAADD9B24429E7A007C9B27 /* HttpClientTests.swift in Sources */,
+				9FAADD97244292E1007C9B27 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
