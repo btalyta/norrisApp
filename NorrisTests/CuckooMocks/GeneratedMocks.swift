@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-12 02:28:19 +0000
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-12 15:48:07 +0000
 
 //
 //  NetworkingProtocols.swift

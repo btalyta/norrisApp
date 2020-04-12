@@ -79,7 +79,7 @@ class HttpClientTests: QuickSpec {
 
 class EndpointMock: Endpoint {
     var url: String {
-        return "http://testClient"
+        return "https://testClient"
     }
     
     var method: RequestMethod {

@@ -54,5 +54,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>chinrg.ttf</string>
+		<string>chint.ttf</string>
+	</array>
 </dict>
 </plist>
