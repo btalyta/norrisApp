@@ -15,6 +15,7 @@ enum APIError: Error, Equatable {
     case unauthorized
     case server
     case request
+    case decode
     
     var localizedDescription: String {
         switch self {
@@ -30,6 +31,8 @@ enum APIError: Error, Equatable {
             return "Unavailable service."
         case .request:
             return "Invalid request."
+        case .decode:
+            return "Invalid decoding data"
         }
     }
 }
