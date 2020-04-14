@@ -1,0 +1,10 @@
+/* 
+  NorrisStrings.strings
+  Norris
+
+  Created by Bárbara Souza on 14/04/20.
+  Copyright © 2020 Bárbara Souza. All rights reserved.
+*/
+
+"uncategorized" = "uncategorized";
+"appName" = "NorrisApp";
