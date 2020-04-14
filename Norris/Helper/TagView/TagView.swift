@@ -13,7 +13,7 @@ class TagView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.font = NorrisFonts.tagFont
-        label.textColor = .white
+        label.textColor = NorrisColors.tagTextColor
         return label
     }()
     
@@ -38,8 +38,8 @@ class TagView: UIView {
         title.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [
-            title.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
-            title.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8),
+            title.topAnchor.constraint(equalTo: self.topAnchor, constant: 4),
+            title.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -4),
             title.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8),
             title.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8)
         ]
