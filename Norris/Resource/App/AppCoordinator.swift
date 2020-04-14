@@ -22,7 +22,9 @@ class AppCoordinator {
         window?.makeKeyAndVisible()
         window?.rootViewController = navigationController
         
-        let controller = ListViewController()
+        let presenter = FactsPresenter()
+        let controller = FactsViewController(presenter: presenter)
+        presenter.viewController = controller
         navigationController.pushViewController(controller, animated: true)
     }
     

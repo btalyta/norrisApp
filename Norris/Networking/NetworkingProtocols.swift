@@ -18,7 +18,7 @@ protocol Endpoint {
     var url: String { get }
     var method: RequestMethod { get }
     var body: Data? { get }
-    var headers: [String: String] { get set }
+    var headers: [String: String] { get }
 }
 
 protocol HttpClientProtocol {

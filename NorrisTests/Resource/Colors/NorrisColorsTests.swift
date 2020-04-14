@@ -15,8 +15,29 @@ class NorrisColorsTests: QuickSpec {
     override func spec() {
         describe("tagColor") {
             it("returns correct color") {
-                let expectedColor = UIColor(displayP3Red: 240/255, green: 113/255, blue: 97/255, alpha: 1.0)
+                let expectedColor = UIColor(displayP3Red: 63/255, green: 167/255, blue: 214/255, alpha: 1.0)
                 expect(NorrisColors.tagColor).to(equal(expectedColor))
+            }
+        }
+        
+        describe("errorColor") {
+            it("returns correct color") {
+                let expectedColor = UIColor(displayP3Red: 240/255, green: 113/255, blue: 97/255, alpha: 1.0)
+                expect(NorrisColors.errorColor).to(equal(expectedColor))
+            }
+        }
+        
+        describe("tagTextColor") {
+            it("returns correct color") {
+                let expectedColor = UIColor.white
+                expect(NorrisColors.tagTextColor).to(equal(expectedColor))
+            }
+        }
+        
+        describe("factTextColor") {
+            it("returns correct color") {
+                let expectedColor = UIColor.black
+                expect(NorrisColors.factTextColor).to(equal(expectedColor))
             }
         }
     }

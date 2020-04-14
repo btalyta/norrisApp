@@ -10,4 +10,6 @@ import UIKit
 
 class NorrisFonts {
     static let tagFont = UIFont(name: "Chinacat", size: 12)
+    static let factFont = UIFont(name: "ChinacatThin", size: 18)
+    static let factSmallFont = UIFont(name: "ChinacatThin", size: 14)
 }
