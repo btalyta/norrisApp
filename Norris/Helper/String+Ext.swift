@@ -9,7 +9,7 @@
 import UIKit
 
 extension String {
-    func addLineSpace(_ spacing: CGFloat) -> NSAttributedString {
+    func addLineSpacing(_ spacing: CGFloat) -> NSAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = spacing
         let attributedString = NSAttributedString(string: self,

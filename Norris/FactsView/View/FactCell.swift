@@ -89,7 +89,7 @@ class FactCell: UITableViewCell {
     
     func show(viewModel: FactCellViewModel, index: IndexPath) {
         tagView.show(title: viewModel.tag)
-        factLabel.attributedText = viewModel.fact.addLineSpace(7)
+        factLabel.attributedText = viewModel.fact.addLineSpacing(7)
         factLabel.font = viewModel.fact.count > maxCharacters ? NorrisFonts.factSmallFont : NorrisFonts.factFont
         indexPath = index
     }

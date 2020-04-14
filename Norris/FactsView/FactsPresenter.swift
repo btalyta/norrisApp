@@ -55,7 +55,7 @@ class FactsPresenter: FactsPresenterProtocol {
     private func adapt(model: [FactModel]) -> FactsViewModel {
         let viewModel =  model.map {
             return FactCellViewModel(fact: $0.value,
-                                     tag: $0.categories?.first ?? "UNCATEGORIZED")
+                                     tag: $0.categories?.first ?? NorrisStrings.uncategorized)
         }
         return FactsViewModel(cells: viewModel)
     }
