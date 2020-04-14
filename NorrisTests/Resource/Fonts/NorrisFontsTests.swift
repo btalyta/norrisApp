@@ -19,5 +19,19 @@ class NorrisFontsTests: QuickSpec {
                 expect(NorrisFonts.tagFont).to(equal(expectedFont))
             }
         }
+        
+        describe("factFont") {
+            it("returns correct font") {
+                let expectedFont = UIFont(name: "ChinacatThin", size: 18)
+                expect(NorrisFonts.factFont).to(equal(expectedFont))
+            }
+        }
+        
+        describe("factSmallFont") {
+            it("returns correct font") {
+                let expectedFont = UIFont(name: "ChinacatThin", size: 14)
+                expect(NorrisFonts.factSmallFont).to(equal(expectedFont))
+            }
+        }
     }
 }
