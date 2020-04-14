@@ -8,6 +8,7 @@ excluded:
 - Pods
 - SwiftLint/Common/3rdPartyLib
 - NorrisTests/CuckooMocks/GeneratedMocks.swift
+- NorrisTests/ListView/View/FactCellTests.swift
 line_length:
     warning: 150
     error: 200
