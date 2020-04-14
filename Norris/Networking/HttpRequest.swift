@@ -9,6 +9,8 @@
 import Foundation
 
 class HttpRequest: HttpRequestProtocol {
+    
+    static var shared: HttpRequestProtocol = HttpRequest()
     private let http: HttpClientProtocol
     private var decoder: JSONDecoder
 
@@ -33,7 +35,7 @@ class HttpRequest: HttpRequestProtocol {
                         let decodedObject = try self.decoder.decode(type, from: data)
                         completion?(.success(decodedObject))
                     } catch {
-                        completion?(.failure(error))
+                        completion?(.failure(APIError.decode))
                     }
                 }
             }
