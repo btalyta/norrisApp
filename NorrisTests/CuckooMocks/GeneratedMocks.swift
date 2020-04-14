@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-12 15:48:07 +0000
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-14 01:25:50 +0000
 
 //
 //  NetworkingProtocols.swift
@@ -177,16 +177,6 @@ import Foundation
                 defaultCall: __defaultImplStub!.headers)
         }
         
-        set {
-            cuckoo_manager.setter("headers",
-                value: newValue,
-                superclassCall:
-                    
-                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                    ,
-                defaultCall: __defaultImplStub!.headers = newValue)
-        }
-        
     }
     
 
@@ -217,7 +207,7 @@ import Foundation
 	    }
 	    
 	    
-	    var headers: Cuckoo.ProtocolToBeStubbedProperty<MockEndpoint, [String: String]> {
+	    var headers: Cuckoo.ProtocolToBeStubbedReadOnlyProperty<MockEndpoint, [String: String]> {
 	        return .init(manager: cuckoo_manager, name: "headers")
 	    }
 	    
@@ -252,7 +242,7 @@ import Foundation
 	    }
 	    
 	    
-	    var headers: Cuckoo.VerifyProperty<[String: String]> {
+	    var headers: Cuckoo.VerifyReadOnlyProperty<[String: String]> {
 	        return .init(manager: cuckoo_manager, name: "headers", callMatcher: callMatcher, sourceLocation: sourceLocation)
 	    }
 	    
@@ -292,8 +282,6 @@ import Foundation
         get {
             return DefaultValueRegistry.defaultValue(for: ([String: String]).self)
         }
-        
-        set { }
         
     }
     
