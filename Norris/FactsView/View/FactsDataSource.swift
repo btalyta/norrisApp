@@ -26,7 +26,8 @@ class FactsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FactCell.identifier, for: indexPath) as? FactCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FactCell.identifier,
+                                                       for: indexPath) as? FactCell else {
             return UITableViewCell()
         }
         
