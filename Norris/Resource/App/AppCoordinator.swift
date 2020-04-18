@@ -16,6 +16,7 @@ class AppCoordinator {
     init(window: UIWindow?, navigationController: UINavigationController = UINavigationController()) {
         self.window = window
         self.navigationController = navigationController
+        setupNavigationController()
     }
     
     func start() {
@@ -28,4 +29,16 @@ class AppCoordinator {
         navigationController.pushViewController(controller, animated: true)
     }
     
+    private func setupNavigationController() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = NorrisColors.baseColor
+        appearance.titleTextAttributes = [.foregroundColor: NorrisColors.tagTextColor,
+                                          .font: NorrisFonts.titleFont ?? UIFont()]
+        appearance.largeTitleTextAttributes = [.foregroundColor: NorrisColors.tagTextColor,
+                                               .font: NorrisFonts.headerFont ?? UIFont()]
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        navigationController.navigationBar.prefersLargeTitles = true
+    }
 }
