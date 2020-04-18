@@ -12,13 +12,14 @@ class TagView: UIView {
     private let title: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = NorrisFonts.tagFont
         label.textColor = NorrisColors.tagTextColor
+        label.adjustsFontSizeToFitWidth = true
         return label
     }()
     
-    override init(frame: CGRect = .zero) {
+    init(frame: CGRect = .zero, font: UIFont? = NorrisFonts.tagFont) {
         super.init(frame: frame)
+        title.font = font
         setupView()
         addConstraints()
     }

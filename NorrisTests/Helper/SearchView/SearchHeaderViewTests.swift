@@ -21,7 +21,7 @@ class SearchHeaderViewTests: QuickSpec {
                 sut = SearchHeaderView(frame: CGRect(x: 0, y: 0,
                                                      width: 320, height: 50))
                 sut.show(title: "Categories")
-                expect(sut).to(recordSnapshot())
+                expect(sut).to(haveValidSnapshot())
             }
         }
     }
