@@ -15,12 +15,18 @@ class FactsRepository: FactsRepositoryProtocols {
         self.network = network
     }
     
-    func requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void)) {
+    func requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void)) {
+        let history = UserDefaults.getValue(key: .suggestions) ?? []
+        if let categories = UserDefaults.getValue(key: .categories) {
+             completion(.success(SuggestionsModel(categories: categories, history: history)))
+            return
+        }
+        
         let endpoint = CategoriesEndpoint()
         network.request([String].self, from: endpoint) { result in
             switch result {
             case.success(let data):
-                completion(.success(CategoriesModel(categories: data)))
+                completion(.success(SuggestionsModel(categories: data, history: history)))
             case .failure(let serviceError):
                 guard let error = serviceError as? APIError else {
                     completion(.failure(APIError.invalidData))

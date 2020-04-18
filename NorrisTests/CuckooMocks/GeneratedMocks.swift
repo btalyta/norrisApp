@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-14 14:07:51 +0000
+// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-18 18:24:19 +0000
 
 //
 //  FactsProtocols.swift
@@ -38,16 +38,16 @@ import Foundation
     
     
     
-     func requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void))  {
+     func requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))  {
         
-    return cuckoo_manager.call("requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void))",
+    return cuckoo_manager.call("requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))",
             parameters: (completion),
             escapingParameters: (completion),
             superclassCall:
                 
                 Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                 ,
-            defaultCall: __defaultImplStub!.requestCategories(completion: completion))
+            defaultCall: __defaultImplStub!.requestSuggestions(completion: completion))
         
     }
     
@@ -90,9 +90,9 @@ import Foundation
 	    }
 	    
 	    
-	    func requestCategories<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(((Result<CategoriesModel, APIError>) -> Void))> where M1.MatchedType == ((Result<CategoriesModel, APIError>) -> Void) {
-	        let matchers: [Cuckoo.ParameterMatcher<(((Result<CategoriesModel, APIError>) -> Void))>] = [wrap(matchable: completion) { $0 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockFactsRepositoryProtocols.self, method: "requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void))", parameterMatchers: matchers))
+	    func requestSuggestions<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(((Result<SuggestionsModel, APIError>) -> Void))> where M1.MatchedType == ((Result<SuggestionsModel, APIError>) -> Void) {
+	        let matchers: [Cuckoo.ParameterMatcher<(((Result<SuggestionsModel, APIError>) -> Void))>] = [wrap(matchable: completion) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsRepositoryProtocols.self, method: "requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))", parameterMatchers: matchers))
 	    }
 	    
 	    func requestFact<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(with category: M1, completion: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(String, ((Result<FactModel, APIError>) -> Void))> where M1.MatchedType == String, M2.MatchedType == ((Result<FactModel, APIError>) -> Void) {
@@ -122,9 +122,9 @@ import Foundation
 	
 	    
 	    @discardableResult
-	    func requestCategories<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.__DoNotUse<(((Result<CategoriesModel, APIError>) -> Void)), Void> where M1.MatchedType == ((Result<CategoriesModel, APIError>) -> Void) {
-	        let matchers: [Cuckoo.ParameterMatcher<(((Result<CategoriesModel, APIError>) -> Void))>] = [wrap(matchable: completion) { $0 }]
-	        return cuckoo_manager.verify("requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void))", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func requestSuggestions<M1: Cuckoo.Matchable>(completion: M1) -> Cuckoo.__DoNotUse<(((Result<SuggestionsModel, APIError>) -> Void)), Void> where M1.MatchedType == ((Result<SuggestionsModel, APIError>) -> Void) {
+	        let matchers: [Cuckoo.ParameterMatcher<(((Result<SuggestionsModel, APIError>) -> Void))>] = [wrap(matchable: completion) { $0 }]
+	        return cuckoo_manager.verify("requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	    @discardableResult
@@ -148,7 +148,7 @@ import Foundation
     
 
     
-     func requestCategories(completion: @escaping ((Result<CategoriesModel, APIError>) -> Void))   {
+     func requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
@@ -243,16 +243,16 @@ import Foundation
     
     
     
-     func wantsToSearch(category: String)  {
+     func wantsToSearch(with index: IndexPath)  {
         
-    return cuckoo_manager.call("wantsToSearch(category: String)",
-            parameters: (category),
-            escapingParameters: (category),
+    return cuckoo_manager.call("wantsToSearch(with: IndexPath)",
+            parameters: (index),
+            escapingParameters: (index),
             superclassCall:
                 
                 Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                 ,
-            defaultCall: __defaultImplStub!.wantsToSearch(category: category))
+            defaultCall: __defaultImplStub!.wantsToSearch(with: index))
         
     }
     
@@ -268,6 +268,21 @@ import Foundation
                 Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                 ,
             defaultCall: __defaultImplStub!.wantsToSearch(text: text))
+        
+    }
+    
+    
+    
+     func wantsToShowSuggestions()  {
+        
+    return cuckoo_manager.call("wantsToShowSuggestions()",
+            parameters: (),
+            escapingParameters: (),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.wantsToShowSuggestions())
         
     }
     
@@ -295,14 +310,19 @@ import Foundation
 	        return .init(stub: cuckoo_manager.createStub(for: MockFactsPresenterProtocol.self, method: "didSelectCard(with: IndexPath)", parameterMatchers: matchers))
 	    }
 	    
-	    func wantsToSearch<M1: Cuckoo.Matchable>(category: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(String)> where M1.MatchedType == String {
-	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: category) { $0 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockFactsPresenterProtocol.self, method: "wantsToSearch(category: String)", parameterMatchers: matchers))
+	    func wantsToSearch<M1: Cuckoo.Matchable>(with index: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(IndexPath)> where M1.MatchedType == IndexPath {
+	        let matchers: [Cuckoo.ParameterMatcher<(IndexPath)>] = [wrap(matchable: index) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsPresenterProtocol.self, method: "wantsToSearch(with: IndexPath)", parameterMatchers: matchers))
 	    }
 	    
 	    func wantsToSearch<M1: Cuckoo.Matchable>(text: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(String)> where M1.MatchedType == String {
 	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: text) { $0 }]
 	        return .init(stub: cuckoo_manager.createStub(for: MockFactsPresenterProtocol.self, method: "wantsToSearch(text: String)", parameterMatchers: matchers))
+	    }
+	    
+	    func wantsToShowSuggestions() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsPresenterProtocol.self, method: "wantsToShowSuggestions()", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -339,15 +359,21 @@ import Foundation
 	    }
 	    
 	    @discardableResult
-	    func wantsToSearch<M1: Cuckoo.Matchable>(category: M1) -> Cuckoo.__DoNotUse<(String), Void> where M1.MatchedType == String {
-	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: category) { $0 }]
-	        return cuckoo_manager.verify("wantsToSearch(category: String)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func wantsToSearch<M1: Cuckoo.Matchable>(with index: M1) -> Cuckoo.__DoNotUse<(IndexPath), Void> where M1.MatchedType == IndexPath {
+	        let matchers: [Cuckoo.ParameterMatcher<(IndexPath)>] = [wrap(matchable: index) { $0 }]
+	        return cuckoo_manager.verify("wantsToSearch(with: IndexPath)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	    @discardableResult
 	    func wantsToSearch<M1: Cuckoo.Matchable>(text: M1) -> Cuckoo.__DoNotUse<(String), Void> where M1.MatchedType == String {
 	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: text) { $0 }]
 	        return cuckoo_manager.verify("wantsToSearch(text: String)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func wantsToShowSuggestions() -> Cuckoo.__DoNotUse<(), Void> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return cuckoo_manager.verify("wantsToShowSuggestions()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	}
@@ -377,11 +403,15 @@ import Foundation
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
-     func wantsToSearch(category: String)   {
+     func wantsToSearch(with index: IndexPath)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
      func wantsToSearch(text: String)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+     func wantsToShowSuggestions()   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
@@ -457,6 +487,21 @@ import Foundation
         
     }
     
+    
+    
+     func showSuggestions(viewModel: [SearchViewModel])  {
+        
+    return cuckoo_manager.call("showSuggestions(viewModel: [SearchViewModel])",
+            parameters: (viewModel),
+            escapingParameters: (viewModel),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.showSuggestions(viewModel: viewModel))
+        
+    }
+    
 
 	 struct __StubbingProxy_FactsViewControllerProtocol: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -479,6 +524,11 @@ import Foundation
 	    func wantsToShare<M1: Cuckoo.Matchable>(url: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(String)> where M1.MatchedType == String {
 	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: url) { $0 }]
 	        return .init(stub: cuckoo_manager.createStub(for: MockFactsViewControllerProtocol.self, method: "wantsToShare(url: String)", parameterMatchers: matchers))
+	    }
+	    
+	    func showSuggestions<M1: Cuckoo.Matchable>(viewModel: M1) -> Cuckoo.ProtocolStubNoReturnFunction<([SearchViewModel])> where M1.MatchedType == [SearchViewModel] {
+	        let matchers: [Cuckoo.ParameterMatcher<([SearchViewModel])>] = [wrap(matchable: viewModel) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsViewControllerProtocol.self, method: "showSuggestions(viewModel: [SearchViewModel])", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -515,6 +565,12 @@ import Foundation
 	        return cuckoo_manager.verify("wantsToShare(url: String)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
+	    @discardableResult
+	    func showSuggestions<M1: Cuckoo.Matchable>(viewModel: M1) -> Cuckoo.__DoNotUse<([SearchViewModel]), Void> where M1.MatchedType == [SearchViewModel] {
+	        let matchers: [Cuckoo.ParameterMatcher<([SearchViewModel])>] = [wrap(matchable: viewModel) { $0 }]
+	        return cuckoo_manager.verify("showSuggestions(viewModel: [SearchViewModel])", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
 	}
 }
 
@@ -536,10 +592,14 @@ import Foundation
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
+     func showSuggestions(viewModel: [SearchViewModel])   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
 }
 
 
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-14 14:07:51 +0000
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-18 18:24:19 +0000
 
 //
 //  NetworkingProtocols.swift

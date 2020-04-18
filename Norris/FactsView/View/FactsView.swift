@@ -23,6 +23,7 @@ class FactsView: UIView {
         super.init(frame: frame)
         setupView()
         addConstraints()
+        addActions()
     }
     
     required init?(coder: NSCoder) {
@@ -44,6 +45,12 @@ class FactsView: UIView {
         ]
         
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func addActions() {
+        dataSource.didTapShareButton = { [weak self] index in
+            self?.didTapShareButton?(index)
+        }
     }
     
     private func setupDataSource() {
