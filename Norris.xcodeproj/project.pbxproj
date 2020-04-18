@@ -69,6 +69,7 @@
 		9FAADE0D2447E3D7007C9B27 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE0C2447E3D7007C9B27 /* SearchViewModel.swift */; };
 		9FAADE0F244897A9007C9B27 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE0E244897A9007C9B27 /* UserDefaults+Ext.swift */; };
 		9FAADE12244B3EC5007C9B27 /* SuggestionsModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE11244B3EC5007C9B27 /* SuggestionsModelFactory.swift */; };
+		9FAADE14244B7458007C9B27 /* SearchCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE13244B7458007C9B27 /* SearchCellTests.swift */; };
 		E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */; };
 		EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */; };
 		FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */; };
@@ -165,6 +166,7 @@
 		9FAADE0C2447E3D7007C9B27 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9FAADE0E244897A9007C9B27 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		9FAADE11244B3EC5007C9B27 /* SuggestionsModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsModelFactory.swift; sourceTree = "<group>"; };
+		9FAADE13244B7458007C9B27 /* SearchCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellTests.swift; sourceTree = "<group>"; };
 		AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 		9FAADDBB24438521007C9B27 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9FAADE15244B74C1007C9B27 /* SearchView */,
 				9FAADDB42443618B007C9B27 /* TagView */,
 				9FAADDF72445F56D007C9B27 /* StringTests.swift */,
 			);
@@ -544,6 +547,14 @@
 				9FAADE11244B3EC5007C9B27 /* SuggestionsModelFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		9FAADE15244B74C1007C9B27 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				9FAADE13244B7458007C9B27 /* SearchCellTests.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -874,6 +885,7 @@
 				9FAADDE924453CF6007C9B27 /* NorrisImagesTests.swift in Sources */,
 				9FAADE00244610A7007C9B27 /* CategoriesEndpointTests.swift in Sources */,
 				9FAADDF82445F56D007C9B27 /* StringTests.swift in Sources */,
+				9FAADE14244B7458007C9B27 /* SearchCellTests.swift in Sources */,
 				9FAADD9D2442B005007C9B27 /* HttpRequestTests.swift in Sources */,
 				9FAADD9B24429E7A007C9B27 /* HttpClientTests.swift in Sources */,
 				9FAADD97244292E1007C9B27 /* GeneratedMocks.swift in Sources */,
