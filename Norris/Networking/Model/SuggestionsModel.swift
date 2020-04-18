@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct CategoriesModel: Equatable {
+struct SuggestionsModel: Equatable {
     let categories: [String]
+    let history: [String]
 }
