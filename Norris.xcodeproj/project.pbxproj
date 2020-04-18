@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F56C364244BB98D006B6CD2 /* ManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C363244BB98D006B6CD2 /* ManagedContext.swift */; };
 		9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
 		9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
 		9FAADD5424411810007C9B27 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* FactsViewController.swift */; };
@@ -74,6 +75,7 @@
 		9FAADE19244B7CA3007C9B27 /* SearchHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE18244B7CA3007C9B27 /* SearchHeaderViewTests.swift */; };
 		9FAADE1B244B7E07007C9B27 /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE1A244B7E07007C9B27 /* SearchViewTests.swift */; };
 		9FAADE1D244B8001007C9B27 /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE1C244B8001007C9B27 /* UserDefaultsTests.swift */; };
+		9FAADE1F244B8D13007C9B27 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE1E244B8D13007C9B27 /* CoreDataManager.swift */; };
 		E52D87A843E7E89121999AF9 /* Pods_Norris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */; };
 		EB22C1F28C9977A321003B1C /* Pods_NorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF8A5DB2EBAAFEB7B4B6233 /* Pods_NorrisTests.framework */; };
 		FAC00F91A075CDDC77A156C9 /* Pods_NorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */; };
@@ -104,6 +106,7 @@
 		68BF4B49B61FBF5B627F7DE7 /* Pods-Norris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris.debug.xcconfig"; path = "Target Support Files/Pods-Norris/Pods-Norris.debug.xcconfig"; sourceTree = "<group>"; };
 		9321E4FE4D7855B0548F769D /* Pods-NorrisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.release.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.release.xcconfig"; sourceTree = "<group>"; };
 		93673C22CC74A6492438254E /* Pods_NorrisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NorrisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F56C363244BB98D006B6CD2 /* ManagedContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedContext.swift; sourceTree = "<group>"; };
 		9FAADD4C24411810007C9B27 /* Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAADD4F24411810007C9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAADD5124411810007C9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 		9FAADE18244B7CA3007C9B27 /* SearchHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderViewTests.swift; sourceTree = "<group>"; };
 		9FAADE1A244B7E07007C9B27 /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
 		9FAADE1C244B8001007C9B27 /* UserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTests.swift; sourceTree = "<group>"; };
+		9FAADE1E244B8D13007C9B27 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		AC72316EE1FDC0AC2DD3B1BA /* Pods-Norris-NorrisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Norris-NorrisUITests.debug.xcconfig"; path = "Target Support Files/Pods-Norris-NorrisUITests/Pods-Norris-NorrisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB7EC1A81F4F48F44F6E556 /* Pods_Norris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Norris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF497A9448DB16F58F845C4 /* Pods-NorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-NorrisTests/Pods-NorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -441,6 +445,8 @@
 				9FAADDCD244484EC007C9B27 /* UIView+Ext.swift */,
 				9FAADDE5244538F3007C9B27 /* String+Ext.swift */,
 				9FAADE0E244897A9007C9B27 /* UserDefaults+Ext.swift */,
+				9FAADE1E244B8D13007C9B27 /* CoreDataManager.swift */,
+				9F56C363244BB98D006B6CD2 /* ManagedContext.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -851,6 +857,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FAADDDC2444A61A007C9B27 /* SuggestionsModel.swift in Sources */,
+				9F56C364244BB98D006B6CD2 /* ManagedContext.swift in Sources */,
 				9FAADE0D2447E3D7007C9B27 /* SearchViewModel.swift in Sources */,
 				9FAADE072447DDAF007C9B27 /* SearchCell.swift in Sources */,
 				9FAADDCA2443C71E007C9B27 /* FactsView.swift in Sources */,
@@ -876,6 +883,7 @@
 				9FAADDDE2444A682007C9B27 /* CategoriesEndpoint.swift in Sources */,
 				9FAADD8E24426DBA007C9B27 /* APIError.swift in Sources */,
 				9FAADDAA24435844007C9B27 /* NorrisColors.swift in Sources */,
+				9FAADE1F244B8D13007C9B27 /* CoreDataManager.swift in Sources */,
 				9FAADD9224427694007C9B27 /* NetworkingProtocols.swift in Sources */,
 				9FAADDC62443A55B007C9B27 /* FactCellViewModel.swift in Sources */,
 				9FAADD8A244262EF007C9B27 /* RequestMethod.swift in Sources */,
