@@ -11,7 +11,7 @@ import Foundation
 class FactsPresenter: FactsPresenterProtocol {
     weak var viewController: FactsViewControllerProtocol?
     private var repository: FactsRepositoryProtocols
-    private var suggestions: [SearchViewModel]
+    private (set) var suggestions: [SearchViewModel]
     private var model: [FactModel] {
         didSet {
             let viewModel = adapt(model: model)
@@ -80,7 +80,7 @@ class FactsPresenter: FactsPresenterProtocol {
         if suggestions[1].suggestions.contains(text.lowercased()) {
             return
         }
-        suggestions[1].suggestions.insert(text, at: 0)
+        suggestions[1].suggestions.insert(text.lowercased(), at: 0)
         UserDefaults.setValue(key: .suggestions, value: suggestions[1].suggestions)
     }
     
