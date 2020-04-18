@@ -18,4 +18,8 @@ class NorrisStrings {
     
     static let uncategorized = localized(for: "uncategorized")
     static let appName = localized(for: "appName")
+    static let cancel = localized(for: "cancel")
+    static let search = localized(for: "search")
+    static let categories = localized(for: "categories")
+    static let history = localized(for: "history")
 }
