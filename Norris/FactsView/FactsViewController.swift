@@ -42,7 +42,6 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
         presenter.viewDidLoad()
         title = NorrisStrings.appName
         configureSearchController()
-        
     }
     
     private func setupView() {
