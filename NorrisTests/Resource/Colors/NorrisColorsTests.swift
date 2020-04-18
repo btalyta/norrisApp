@@ -40,5 +40,12 @@ class NorrisColorsTests: QuickSpec {
                 expect(NorrisColors.factTextColor).to(equal(expectedColor))
             }
         }
+        
+        describe("baseColor") {
+            it("returns correct color") {
+                let expectedColor = UIColor(displayP3Red: 69/255, green: 205/255, blue: 144/255, alpha: 1.0)
+                expect(NorrisColors.baseColor).to(equal(expectedColor))
+            }
+        }
     }
 }
