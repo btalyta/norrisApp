@@ -31,9 +31,18 @@ class FactsViewTests: QuickSpec {
         }
         
         describe("show") {
-            it("has valid snapshot") {
-                sut.show(viewModel: FactsViewModel(cells: items))
-                expect(sut).to(haveValidSnapshot())
+            context("when view isn't loading") {
+                it("has valid snapshot") {
+                    sut.show(viewModel: FactsViewModel(cells: items, isLoading: false))
+                    expect(sut).to(recordSnapshot())
+                }
+            }
+            
+            context("when view is loading") {
+                it("has valid snapshot") {
+                    sut.show(viewModel: FactsViewModel(cells: items, isLoading: true))
+                    expect(sut).to(recordSnapshot())
+                }
             }
         }
     }
