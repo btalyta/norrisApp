@@ -45,6 +45,7 @@ class ErrorView: UIView {
     
     private func setupView() {
         backgroundColor = NorrisColors.tagTextColor
+        accessibilityLabel = "error_view"
         
         addSubview(imageView)
         addSubview(titleLabel)

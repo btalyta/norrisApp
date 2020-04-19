@@ -45,6 +45,7 @@ class SearchView: UIView {
     
     private func setupView() {
         addSubview(collectionView)
+        accessibilityLabel = "search_view"
     }
     
     private func addConstraints() {

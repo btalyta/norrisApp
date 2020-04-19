@@ -30,6 +30,7 @@ class TagView: UIView {
     
     private func setupView() {
         layer.cornerRadius = 8
+        accessibilityLabel = "tag_view"
         backgroundColor = NorrisColors.tagColor
         
         addSubview(title)

@@ -43,6 +43,7 @@ class FactsView: UIView {
         addSubview(tableView)
         addSubview(loadingView)
         loadingView.isHidden = true
+        accessibilityLabel = "facts_view"
     }
     
     private func addConstraints() {
