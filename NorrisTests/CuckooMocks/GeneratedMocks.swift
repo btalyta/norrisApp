@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-19 00:22:21 +0000
+// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-19 00:25:04 +0000
 
 //
 //  FactsProtocols.swift
@@ -629,7 +629,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: Norris/Helper/CoreData/CoreDataManagerProtocol.swift at 2020-04-19 00:22:21 +0000
+// MARK: - Mocks generated from file: Norris/Helper/CoreData/CoreDataManagerProtocol.swift at 2020-04-19 00:25:04 +0000
 
 //
 //  CoreDataManagerProtocol.swift
@@ -824,7 +824,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-19 00:22:21 +0000
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-19 00:25:04 +0000
 
 //
 //  NetworkingProtocols.swift

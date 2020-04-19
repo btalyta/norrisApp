@@ -33,6 +33,10 @@ class FactsPresenterTests: QuickSpec {
                 when(stub.wantsToShare(url: anyString())).thenDoNothing()
                 when(stub.showSuggestions(viewModel: any([SearchViewModel].self))).thenDoNothing()
             }
+            
+            stub(repositoryMock) { stub in
+                when(stub.requestLocalFacts(with: any(), completion: anyClosure())).thenDoNothing()
+            }
         }
         
         describe("viewDidLoad") {
@@ -50,6 +54,9 @@ class FactsPresenterTests: QuickSpec {
                     expect(sut.suggestions[0].title).to(equal("Categories"))
                     expect(sut.suggestions[1].suggestions.count).to(equal(3))
                     expect(sut.suggestions[1].title).to(equal("History"))
+                }
+                it("calls repository requestLocalFacts") {
+                    verify(repositoryMock).requestLocalFacts(with: any(), completion: anyClosure())
                 }
             }
             
