@@ -14,13 +14,16 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
     private let contentView: FactsView
     private let searchController = UISearchController(searchResultsController: nil)
     private let suggestionsView: SearchView
+    private let errorView: ErrorView
     
     init(presenter: FactsPresenterProtocol = FactsPresenter(),
          contentView: FactsView = FactsView(),
-         suggestionsView: SearchView = SearchView()) {
+         suggestionsView: SearchView = SearchView(),
+         errorView: ErrorView = ErrorView()) {
         self.presenter = presenter
         self.contentView = contentView
         self.suggestionsView = suggestionsView
+        self.errorView = errorView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -45,20 +48,31 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
     }
     
     private func setupView() {
+        view.addSubview(errorView)
         view.addSubview(suggestionsView)
         suggestionsView.alpha = 0
+        errorView.isHidden = true
     }
     
     private func addConstraints() {
         suggestionsView.translatesAutoresizingMaskIntoConstraints = false
+        errorView.translatesAutoresizingMaskIntoConstraints = false
         
-        let constraints = [
+        let suggestionsViewConstraints = [
             suggestionsView.topAnchor.constraint(equalTo: view.safeTopAnchor),
             suggestionsView.rightAnchor.constraint(equalTo: view.safeRightAnchor),
             suggestionsView.leftAnchor.constraint(equalTo: view.safeLeftAnchor),
             suggestionsView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4)
         ]
-        NSLayoutConstraint.activate(constraints)
+        NSLayoutConstraint.activate(suggestionsViewConstraints)
+        
+        let errorViewConstraints = [
+            errorView.topAnchor.constraint(equalTo: view.safeTopAnchor),
+            errorView.rightAnchor.constraint(equalTo: view.safeRightAnchor),
+            errorView.leftAnchor.constraint(equalTo: view.safeLeftAnchor),
+            errorView.bottomAnchor.constraint(equalTo: view.safeBottomAnchor)
+        ]
+        NSLayoutConstraint.activate(errorViewConstraints)
     }
     
     private func bindActions() {
@@ -70,6 +84,7 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
             self?.presenter.wantsToSearch(with: index)
             self?.showSuggestionView(false)
             self?.searchController.isActive = false
+            self?.errorView.isHidden = true
         }
     }
     
@@ -93,8 +108,9 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-    func showError() {
-        // TODO: Add Error view
+    func showError(message: String) {
+        errorView.show(error: message)
+        errorView.isHidden = false
     }
     
     func showSuggestions(viewModel: [SearchViewModel]) {
@@ -117,6 +133,7 @@ extension FactsViewController: UISearchBarDelegate, UISearchControllerDelegate {
             presenter.wantsToSearch(text: text)
         }
         showSuggestionView(false)
+        errorView.isHidden = true
     }
     
     func willDismissSearchController(_ searchController: UISearchController) {
