@@ -11,6 +11,14 @@ import UIKit
 class FactsView: UIView {
     var didTapShareButton: ((_ index: IndexPath) -> Void)?
     
+    private let loadingView: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.hidesWhenStopped = true
+        view.color = NorrisColors.baseColor
+        view.style = .large
+        return view
+    }()
+    
     private var tableView: UITableView = {
         let view = UITableView()
         view.register(FactCell.self, forCellReuseIdentifier: FactCell.identifier)
@@ -31,11 +39,15 @@ class FactsView: UIView {
     }
     
     private func setupView() {
+        backgroundColor = NorrisColors.tagTextColor
         addSubview(tableView)
+        addSubview(loadingView)
+        loadingView.isHidden = true
     }
     
     private func addConstraints() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        loadingView.translatesAutoresizingMaskIntoConstraints = false
         
         let constraints = [
             tableView.topAnchor.constraint(equalTo: self.safeTopAnchor),
@@ -45,6 +57,12 @@ class FactsView: UIView {
         ]
         
         NSLayoutConstraint.activate(constraints)
+        
+        let loadingViewConstraints = [
+            loadingView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            loadingView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ]
+        NSLayoutConstraint.activate(loadingViewConstraints)
     }
     
     private func addActions() {
@@ -60,6 +78,14 @@ class FactsView: UIView {
     }
     
     func show(viewModel: FactsViewModel) {
+        tableView.isHidden = viewModel.isLoading
+        loadingView.isHidden = !viewModel.isLoading
+        
+        if viewModel.isLoading {
+            loadingView.startAnimating()
+            return
+        }
+        
         dataSource.update(items: viewModel.cells)
         setupDataSource()
     }
