@@ -27,6 +27,7 @@ class FactsPresenter: FactsPresenterProtocol {
     
     func viewDidLoad() {
         requestSuggestions()
+        loadLoacalFacts()
     }
     
     func didSelectCard(with index: IndexPath) {
@@ -58,6 +59,12 @@ class FactsPresenter: FactsPresenterProtocol {
             default:
                 break
             }
+        }
+    }
+    
+    private func loadLoacalFacts() {
+        repository.requestLocalFacts(with: 10) { [weak self] result in
+            self?.model = result
         }
     }
     
