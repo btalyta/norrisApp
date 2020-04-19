@@ -9,13 +9,6 @@
 import CoreData
 import UIKit
 
-protocol CoreDataManagerProtocol: class {
-    func updateFacts(models: [FactModel], tag: String?)
-    func fetchFacts(with text: String) -> [FactModel]
-    func fetchCategory(with category: String) -> [FactModel]
-    func fetchFacts(with total: Int) -> [FactModel]
-}
-
 class CoreDataManager: CoreDataManagerProtocol {
     private let entityName = "Fact"
     private let contextManager: ManagedContextProtocol

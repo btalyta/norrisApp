@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-18 18:24:19 +0000
+// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-19 00:22:21 +0000
 
 //
 //  FactsProtocols.swift
@@ -81,6 +81,21 @@ import Foundation
         
     }
     
+    
+    
+     func requestLocalFacts(with total: Int, completion: @escaping (([FactModel]) -> Void))  {
+        
+    return cuckoo_manager.call("requestLocalFacts(with: Int, completion: @escaping (([FactModel]) -> Void))",
+            parameters: (total, completion),
+            escapingParameters: (total, completion),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.requestLocalFacts(with: total, completion: completion))
+        
+    }
+    
 
 	 struct __StubbingProxy_FactsRepositoryProtocols: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -103,6 +118,11 @@ import Foundation
 	    func requestCollection<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(with text: M1, completion: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(String, ((Result<FactsCollectionModel, APIError>) -> Void))> where M1.MatchedType == String, M2.MatchedType == ((Result<FactsCollectionModel, APIError>) -> Void) {
 	        let matchers: [Cuckoo.ParameterMatcher<(String, ((Result<FactsCollectionModel, APIError>) -> Void))>] = [wrap(matchable: text) { $0.0 }, wrap(matchable: completion) { $0.1 }]
 	        return .init(stub: cuckoo_manager.createStub(for: MockFactsRepositoryProtocols.self, method: "requestCollection(with: String, completion: @escaping ((Result<FactsCollectionModel, APIError>) -> Void))", parameterMatchers: matchers))
+	    }
+	    
+	    func requestLocalFacts<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(with total: M1, completion: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(Int, (([FactModel]) -> Void))> where M1.MatchedType == Int, M2.MatchedType == (([FactModel]) -> Void) {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int, (([FactModel]) -> Void))>] = [wrap(matchable: total) { $0.0 }, wrap(matchable: completion) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsRepositoryProtocols.self, method: "requestLocalFacts(with: Int, completion: @escaping (([FactModel]) -> Void))", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -139,6 +159,12 @@ import Foundation
 	        return cuckoo_manager.verify("requestCollection(with: String, completion: @escaping ((Result<FactsCollectionModel, APIError>) -> Void))", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
+	    @discardableResult
+	    func requestLocalFacts<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(with total: M1, completion: M2) -> Cuckoo.__DoNotUse<(Int, (([FactModel]) -> Void)), Void> where M1.MatchedType == Int, M2.MatchedType == (([FactModel]) -> Void) {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int, (([FactModel]) -> Void))>] = [wrap(matchable: total) { $0.0 }, wrap(matchable: completion) { $0.1 }]
+	        return cuckoo_manager.verify("requestLocalFacts(with: Int, completion: @escaping (([FactModel]) -> Void))", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
 	}
 }
 
@@ -157,6 +183,10 @@ import Foundation
     }
     
      func requestCollection(with text: String, completion: @escaping ((Result<FactsCollectionModel, APIError>) -> Void))   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+     func requestLocalFacts(with total: Int, completion: @escaping (([FactModel]) -> Void))   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
@@ -599,7 +629,202 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-18 18:24:19 +0000
+// MARK: - Mocks generated from file: Norris/Helper/CoreData/CoreDataManagerProtocol.swift at 2020-04-19 00:22:21 +0000
+
+//
+//  CoreDataManagerProtocol.swift
+//  Norris
+//
+//  Created by Bárbara Souza on 18/04/20.
+//  Copyright © 2020 Bárbara Souza. All rights reserved.
+
+import Cuckoo
+@testable import Norris
+
+import Foundation
+
+
+ class MockCoreDataManagerProtocol: CoreDataManagerProtocol, Cuckoo.ProtocolMock {
+    
+     typealias MocksType = CoreDataManagerProtocol
+    
+     typealias Stubbing = __StubbingProxy_CoreDataManagerProtocol
+     typealias Verification = __VerificationProxy_CoreDataManagerProtocol
+
+     let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    
+    private var __defaultImplStub: CoreDataManagerProtocol?
+
+     func enableDefaultImplementation(_ stub: CoreDataManagerProtocol) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+    
+
+    
+
+    
+
+    
+    
+    
+     func updateFacts(models: [FactModel], tag: String?)  {
+        
+    return cuckoo_manager.call("updateFacts(models: [FactModel], tag: String?)",
+            parameters: (models, tag),
+            escapingParameters: (models, tag),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.updateFacts(models: models, tag: tag))
+        
+    }
+    
+    
+    
+     func fetchFacts(with text: String) -> [FactModel] {
+        
+    return cuckoo_manager.call("fetchFacts(with: String) -> [FactModel]",
+            parameters: (text),
+            escapingParameters: (text),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchFacts(with: text))
+        
+    }
+    
+    
+    
+     func fetchCategory(with category: String) -> [FactModel] {
+        
+    return cuckoo_manager.call("fetchCategory(with: String) -> [FactModel]",
+            parameters: (category),
+            escapingParameters: (category),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchCategory(with: category))
+        
+    }
+    
+    
+    
+     func fetchFacts(with total: Int) -> [FactModel] {
+        
+    return cuckoo_manager.call("fetchFacts(with: Int) -> [FactModel]",
+            parameters: (total),
+            escapingParameters: (total),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.fetchFacts(with: total))
+        
+    }
+    
+
+	 struct __StubbingProxy_CoreDataManagerProtocol: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func updateFacts<M1: Cuckoo.Matchable, M2: Cuckoo.OptionalMatchable>(models: M1, tag: M2) -> Cuckoo.ProtocolStubNoReturnFunction<([FactModel], String?)> where M1.MatchedType == [FactModel], M2.OptionalMatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<([FactModel], String?)>] = [wrap(matchable: models) { $0.0 }, wrap(matchable: tag) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockCoreDataManagerProtocol.self, method: "updateFacts(models: [FactModel], tag: String?)", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchFacts<M1: Cuckoo.Matchable>(with text: M1) -> Cuckoo.ProtocolStubFunction<(String), [FactModel]> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: text) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockCoreDataManagerProtocol.self, method: "fetchFacts(with: String) -> [FactModel]", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchCategory<M1: Cuckoo.Matchable>(with category: M1) -> Cuckoo.ProtocolStubFunction<(String), [FactModel]> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: category) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockCoreDataManagerProtocol.self, method: "fetchCategory(with: String) -> [FactModel]", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchFacts<M1: Cuckoo.Matchable>(with total: M1) -> Cuckoo.ProtocolStubFunction<(Int), [FactModel]> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: total) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockCoreDataManagerProtocol.self, method: "fetchFacts(with: Int) -> [FactModel]", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	 struct __VerificationProxy_CoreDataManagerProtocol: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func updateFacts<M1: Cuckoo.Matchable, M2: Cuckoo.OptionalMatchable>(models: M1, tag: M2) -> Cuckoo.__DoNotUse<([FactModel], String?), Void> where M1.MatchedType == [FactModel], M2.OptionalMatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<([FactModel], String?)>] = [wrap(matchable: models) { $0.0 }, wrap(matchable: tag) { $0.1 }]
+	        return cuckoo_manager.verify("updateFacts(models: [FactModel], tag: String?)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchFacts<M1: Cuckoo.Matchable>(with text: M1) -> Cuckoo.__DoNotUse<(String), [FactModel]> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: text) { $0 }]
+	        return cuckoo_manager.verify("fetchFacts(with: String) -> [FactModel]", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchCategory<M1: Cuckoo.Matchable>(with category: M1) -> Cuckoo.__DoNotUse<(String), [FactModel]> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: category) { $0 }]
+	        return cuckoo_manager.verify("fetchCategory(with: String) -> [FactModel]", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchFacts<M1: Cuckoo.Matchable>(with total: M1) -> Cuckoo.__DoNotUse<(Int), [FactModel]> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: total) { $0 }]
+	        return cuckoo_manager.verify("fetchFacts(with: Int) -> [FactModel]", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+}
+
+ class CoreDataManagerProtocolStub: CoreDataManagerProtocol {
+    
+
+    
+
+    
+     func updateFacts(models: [FactModel], tag: String?)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
+    }
+    
+     func fetchFacts(with text: String) -> [FactModel]  {
+        return DefaultValueRegistry.defaultValue(for: ([FactModel]).self)
+    }
+    
+     func fetchCategory(with category: String) -> [FactModel]  {
+        return DefaultValueRegistry.defaultValue(for: ([FactModel]).self)
+    }
+    
+     func fetchFacts(with total: Int) -> [FactModel]  {
+        return DefaultValueRegistry.defaultValue(for: ([FactModel]).self)
+    }
+    
+}
+
+
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-19 00:22:21 +0000
 
 //
 //  NetworkingProtocols.swift

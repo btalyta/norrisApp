@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import Cuckoo
 
 @testable import Norris
 
@@ -15,10 +16,16 @@ class FactsRepositoryTests: QuickSpec {
     override func spec() {
         var sut: FactsRepository!
         var networkMock: HttpRequestProtocolMock!
+        var coreDataManagerMock: MockCoreDataManagerProtocol!
         
         beforeEach {
             networkMock = HttpRequestProtocolMock()
-            sut = FactsRepository(network: networkMock)
+            coreDataManagerMock = MockCoreDataManagerProtocol()
+            sut = FactsRepository(network: networkMock,
+                                  coreDataManager: coreDataManagerMock)
+            stub(coreDataManagerMock) { stub in
+                when(stub.fetchFacts(with: anyInt())).thenReturn([])
+            }
         }
         
         describe("#requestSuggestions") {
@@ -59,6 +66,13 @@ class FactsRepositoryTests: QuickSpec {
                 sut.requestCollection(with: "") { _ in }
                 expect(networkMock.requestWasCalled).to(beTrue())
                 expect(networkMock.endpoint).to(beAKindOf(FactsEndpoint.self))
+            }
+        }
+        
+        describe("requestLocalFacts") {
+            it("calls coreDataManagerMock ") {
+                sut.requestLocalFacts(with: 10) { _ in }
+                verify(coreDataManagerMock).fetchFacts(with: 10)
             }
         }
     }

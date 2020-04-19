@@ -12,7 +12,7 @@ protocol FactsRepositoryProtocols {
     func requestSuggestions(completion: @escaping ((Result<SuggestionsModel, APIError>) -> Void))
     func requestFact(with category: String, completion: @escaping ((Result<FactModel, APIError>) -> Void))
     func requestCollection(with text: String, completion: @escaping ((Result<FactsCollectionModel, APIError>) -> Void))
-    func reuestLocalFacts(with total: Int) -> [FactModel]
+    func requestLocalFacts(with total: Int, completion: @escaping(([FactModel]) -> Void))
 }
 
 protocol FactsPresenterProtocol: class {

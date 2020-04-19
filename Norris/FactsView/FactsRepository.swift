@@ -100,7 +100,7 @@ class FactsRepository: FactsRepositoryProtocols {
         completion(.failure(error))
     }
     
-    func reuestLocalFacts(with total: Int) -> [FactModel] {
-        return coreDataManager.fetchFacts(with: total)
+    func requestLocalFacts(with total: Int, completion: @escaping(([FactModel]) -> Void)) {
+        completion(coreDataManager.fetchFacts(with: total))
     }
 }

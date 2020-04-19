@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol CoreDataManagerProtocol: class {
+    func updateFacts(models: [FactModel], tag: String?)
+    func fetchFacts(with text: String) -> [FactModel]
+    func fetchCategory(with category: String) -> [FactModel]
+    func fetchFacts(with total: Int) -> [FactModel]
+}
