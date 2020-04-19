@@ -25,6 +25,7 @@ target 'Norris' do
    inherit! :search_paths
    test_pod
    pod 'KIF'
+   pod 'KIF-Quick'
   end
 
 end
