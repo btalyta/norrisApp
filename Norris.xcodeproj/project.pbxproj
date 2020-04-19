@@ -11,6 +11,7 @@
 		9F56C366244BC582006B6CD2 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C365244BC582006B6CD2 /* CoreDataManagerTests.swift */; };
 		9F56C368244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C367244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift */; };
 		9F56C36D244C7FC5006B6CD2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */; };
+		9F56C370244C90EB006B6CD2 /* ErrorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */; };
 		9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
 		9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
 		9FAADD5424411810007C9B27 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* FactsViewController.swift */; };
@@ -113,6 +114,7 @@
 		9F56C365244BC582006B6CD2 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
 		9F56C367244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerProtocol.swift; sourceTree = "<group>"; };
 		9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewTests.swift; sourceTree = "<group>"; };
 		9FAADD4C24411810007C9B27 /* Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAADD4F24411810007C9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAADD5124411810007C9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +268,14 @@
 			isa = PBXGroup;
 			children = (
 				9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		9F56C36E244C90D5006B6CD2 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */,
 			);
 			path = ErrorView;
 			sourceTree = "<group>";
@@ -486,6 +496,7 @@
 		9FAADDBB24438521007C9B27 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9F56C36E244C90D5006B6CD2 /* ErrorView */,
 				9F56C36A244BC9DF006B6CD2 /* CoreData */,
 				9FAADE15244B74C1007C9B27 /* SearchView */,
 				9FAADDB42443618B007C9B27 /* TagView */,
@@ -953,6 +964,7 @@
 				9FAADE12244B3EC5007C9B27 /* SuggestionsModelFactory.swift in Sources */,
 				9FAADDEF24454963007C9B27 /* FactsPresenterTests.swift in Sources */,
 				9FAADDB324436087007C9B27 /* NorrisColorsTests.swift in Sources */,
+				9F56C370244C90EB006B6CD2 /* ErrorViewTests.swift in Sources */,
 				9FAADDEB24453FC3007C9B27 /* FactsDataSourceTests.swift in Sources */,
 				9FAADE1D244B8001007C9B27 /* UserDefaultsTests.swift in Sources */,
 				9FAADDF124454DBB007C9B27 /* FactsViewControllerTests.swift in Sources */,
