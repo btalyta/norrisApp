@@ -12,6 +12,7 @@
 		9F56C368244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C367244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift */; };
 		9F56C36D244C7FC5006B6CD2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */; };
 		9F56C370244C90EB006B6CD2 /* ErrorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */; };
+		9F56C372244C91CE006B6CD2 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C371244C91CE006B6CD2 /* APIErrorTests.swift */; };
 		9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
 		9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
 		9FAADD5424411810007C9B27 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* FactsViewController.swift */; };
@@ -115,6 +116,7 @@
 		9F56C367244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerProtocol.swift; sourceTree = "<group>"; };
 		9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewTests.swift; sourceTree = "<group>"; };
+		9F56C371244C91CE006B6CD2 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 		9FAADD4C24411810007C9B27 /* Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAADD4F24411810007C9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAADD5124411810007C9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				9FAADDFE24461093007C9B27 /* Endpoint */,
 				9FAADD9A24429E7A007C9B27 /* HttpClientTests.swift */,
 				9FAADD9C2442B005007C9B27 /* HttpRequestTests.swift */,
+				9F56C371244C91CE006B6CD2 /* APIErrorTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -950,6 +953,7 @@
 				9FAADDED244545EA007C9B27 /* FactsViewTests.swift in Sources */,
 				9F56C366244BC582006B6CD2 /* CoreDataManagerTests.swift in Sources */,
 				9FAADE19244B7CA3007C9B27 /* SearchHeaderViewTests.swift in Sources */,
+				9F56C372244C91CE006B6CD2 /* APIErrorTests.swift in Sources */,
 				9FAADDE924453CF6007C9B27 /* NorrisImagesTests.swift in Sources */,
 				9FAADE00244610A7007C9B27 /* CategoriesEndpointTests.swift in Sources */,
 				9FAADDF82445F56D007C9B27 /* StringTests.swift in Sources */,

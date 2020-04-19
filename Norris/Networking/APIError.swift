@@ -24,7 +24,7 @@ enum APIError: Error, Equatable {
         case .unauthorized:
             return "Unauthorized."
         case .service, .request:
-            return "Could not connect to the server"
+            return "Could not connect to the server."
         case .decode, .jsonConversionFailure, .invalidData:
             return "Could not display results."
         }
