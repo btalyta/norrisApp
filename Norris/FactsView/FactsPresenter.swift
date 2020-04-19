@@ -91,32 +91,38 @@ class FactsPresenter: FactsPresenterProtocol {
         UserDefaults.setValue(key: .suggestions, value: suggestions[1].suggestions)
     }
     
+    private func showLoading() {
+        viewController?.showFacts(viewModel: FactsViewModel(cells: [], isLoading: true))
+    }
+    
     private func adapt(model: [FactModel]) -> FactsViewModel {
         let viewModel =  model.map {
             return FactCellViewModel(fact: $0.value,
                                      tag: $0.categories?.first ?? NorrisStrings.uncategorized)
         }
-        return FactsViewModel(cells: viewModel)
+        return FactsViewModel(cells: viewModel, isLoading: false)
     }
     
     private func requestCollection(witn text: String) {
+        showLoading()
         repository.requestCollection(with: text) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.model = data.result
-            case .failure:
-                self?.viewController?.showError()
+            case .failure(let error):
+                self?.viewController?.showError(message: "\(error.localizedDescription)\n\(NorrisStrings.tryAgain)")
             }
         }
     }
     
     private func requestFact(witn category: String) {
+        showLoading()
         repository.requestFact(with: category) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.model = [data]
-            case .failure:
-                self?.viewController?.showError()
+            case .failure(let error):
+                self?.viewController?.showError(message: "\(error.localizedDescription)\n\(NorrisStrings.tryAgain)")
             }
         }
     }
