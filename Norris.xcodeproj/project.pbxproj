@@ -13,6 +13,48 @@
 		9F56C36D244C7FC5006B6CD2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */; };
 		9F56C370244C90EB006B6CD2 /* ErrorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */; };
 		9F56C372244C91CE006B6CD2 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C371244C91CE006B6CD2 /* APIErrorTests.swift */; };
+		9F56C379244C98F0006B6CD2 /* FactsViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C378244C98F0006B6CD2 /* FactsViewControllerUITests.swift */; };
+		9F56C37C244C9E28006B6CD2 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD96244292E1007C9B27 /* GeneratedMocks.swift */; };
+		9F56C37F244CA38B006B6CD2 /* FactCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C37E244CA38B006B6CD2 /* FactCellViewModelFactory.swift */; };
+		9F56C382244CA85B006B6CD2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */; };
+		9F56C383244CA867006B6CD2 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDD924449FBD007C9B27 /* FactModel.swift */; };
+		9F56C384244CA86A006B6CD2 /* SuggestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDDB2444A61A007C9B27 /* SuggestionsModel.swift */; };
+		9F56C385244CA86E006B6CD2 /* FactsCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDE124452764007C9B27 /* FactsCollectionModel.swift */; };
+		9F56C386244CA886006B6CD2 /* NorrisStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDF32445E8EC007C9B27 /* NorrisStrings.swift */; };
+		9F56C387244CA88B006B6CD2 /* NorrisFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDA62443553E007C9B27 /* NorrisFonts.swift */; };
+		9F56C388244CA88F006B6CD2 /* NorrisImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDBE24438AA6007C9B27 /* NorrisImages.swift */; };
+		9F56C389244CA893006B6CD2 /* NorrisColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDA924435844007C9B27 /* NorrisColors.swift */; };
+		9F56C38A244CA8AE006B6CD2 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE042447D2A6007C9B27 /* SearchHeaderView.swift */; };
+		9F56C38B244CA8B1006B6CD2 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE062447DDAF007C9B27 /* SearchCell.swift */; };
+		9F56C38C244CA8B3006B6CD2 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE082447DF2B007C9B27 /* SearchView.swift */; };
+		9F56C38D244CA8B6006B6CD2 /* SearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE0A2447E347007C9B27 /* SearchDataSource.swift */; };
+		9F56C38E244CA8B9006B6CD2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE0C2447E3D7007C9B27 /* SearchViewModel.swift */; };
+		9F56C38F244CA8BD006B6CD2 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9F24435320007C9B27 /* TagView.swift */; };
+		9F56C390244CA8C3006B6CD2 /* FactCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDC52443A55B007C9B27 /* FactCellViewModel.swift */; };
+		9F56C391244CA8C6006B6CD2 /* FactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDC72443BD19007C9B27 /* FactsDataSource.swift */; };
+		9F56C392244CA8C8006B6CD2 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDC92443C71E007C9B27 /* FactsView.swift */; };
+		9F56C393244CA8CB006B6CD2 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDCF244485BA007C9B27 /* FactsViewModel.swift */; };
+		9F56C394244CA8CD006B6CD2 /* FactsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDD1244495F2007C9B27 /* FactsProtocols.swift */; };
+		9F56C395244CA8D0006B6CD2 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* FactsViewController.swift */; };
+		9F56C396244CA8D3006B6CD2 /* FactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDD3244495FF007C9B27 /* FactsPresenter.swift */; };
+		9F56C397244CA8D5006B6CD2 /* FactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDD524449619007C9B27 /* FactsRepository.swift */; };
+		9F56C398244CA8FA006B6CD2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8524420957007C9B27 /* AppCoordinator.swift */; };
+		9F56C399244CA903006B6CD2 /* CategoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDDD2444A682007C9B27 /* CategoriesEndpoint.swift */; };
+		9F56C39A244CA907006B6CD2 /* FactsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDDF2444A744007C9B27 /* FactsEndpoint.swift */; };
+		9F56C39B244CA90A006B6CD2 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD9124427694007C9B27 /* NetworkingProtocols.swift */; };
+		9F56C39C244CA90E006B6CD2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD89244262EF007C9B27 /* RequestMethod.swift */; };
+		9F56C39D244CA912006B6CD2 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8B244264EE007C9B27 /* HttpClient.swift */; };
+		9F56C39E244CA915006B6CD2 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8D24426DBA007C9B27 /* APIError.swift */; };
+		9F56C39F244CA918006B6CD2 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD8F24427533007C9B27 /* HttpRequest.swift */; };
+		9F56C3A0244CA91F006B6CD2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE1E244B8D13007C9B27 /* CoreDataManager.swift */; };
+		9F56C3A1244CA923006B6CD2 /* ManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C363244BB98D006B6CD2 /* ManagedContext.swift */; };
+		9F56C3A2244CA926006B6CD2 /* CoreDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F56C367244BC9BD006B6CD2 /* CoreDataManagerProtocol.swift */; };
+		9F56C3A3244CA92E006B6CD2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDCD244484EC007C9B27 /* UIView+Ext.swift */; };
+		9F56C3A4244CA931006B6CD2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDE5244538F3007C9B27 /* String+Ext.swift */; };
+		9F56C3A5244CA934006B6CD2 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADE0E244897A9007C9B27 /* UserDefaults+Ext.swift */; };
+		9F56C3A6244CA93B006B6CD2 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADDB824437EFA007C9B27 /* FactCell.swift */; };
+		9F56C3A7244CA957006B6CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
+		9F56C3A8244CA95A006B6CD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
 		9FAADD5024411810007C9B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD4F24411810007C9B27 /* AppDelegate.swift */; };
 		9FAADD5224411810007C9B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5124411810007C9B27 /* SceneDelegate.swift */; };
 		9FAADD5424411810007C9B27 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAADD5324411810007C9B27 /* FactsViewController.swift */; };
@@ -117,6 +159,9 @@
 		9F56C36C244C7FC5006B6CD2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		9F56C36F244C90EB006B6CD2 /* ErrorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewTests.swift; sourceTree = "<group>"; };
 		9F56C371244C91CE006B6CD2 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		9F56C373244C989C006B6CD2 /* NorrisUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NorrisUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F56C378244C98F0006B6CD2 /* FactsViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewControllerUITests.swift; sourceTree = "<group>"; };
+		9F56C37E244CA38B006B6CD2 /* FactCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCellViewModelFactory.swift; sourceTree = "<group>"; };
 		9FAADD4C24411810007C9B27 /* Norris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Norris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAADD4F24411810007C9B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FAADD5124411810007C9B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -282,6 +327,22 @@
 			path = ErrorView;
 			sourceTree = "<group>";
 		};
+		9F56C377244C98D2006B6CD2 /* FactsView */ = {
+			isa = PBXGroup;
+			children = (
+				9F56C378244C98F0006B6CD2 /* FactsViewControllerUITests.swift */,
+			);
+			path = FactsView;
+			sourceTree = "<group>";
+		};
+		9F56C37D244CA367006B6CD2 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				9F56C37E244CA38B006B6CD2 /* FactCellViewModelFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		9FAADD4324411810007C9B27 = {
 			isa = PBXGroup;
 			children = (
@@ -334,8 +395,11 @@
 		9FAADD7324411815007C9B27 /* NorrisUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9F56C37D244CA367006B6CD2 /* Factory */,
+				9F56C377244C98D2006B6CD2 /* FactsView */,
 				9FAADD7424411815007C9B27 /* NorrisUITests.swift */,
 				9FAADD7624411815007C9B27 /* Info.plist */,
+				9F56C373244C989C006B6CD2 /* NorrisUITests-Bridging-Header.h */,
 			);
 			path = NorrisUITests;
 			sourceTree = "<group>";
@@ -670,6 +734,7 @@
 			buildConfigurationList = 9FAADD7F24411815007C9B27 /* Build configuration list for PBXNativeTarget "NorrisUITests" */;
 			buildPhases = (
 				4F867C1686111C252CF89C96 /* [CP] Check Pods Manifest.lock */,
+				9F56C380244CA485006B6CD2 /* Mock */,
 				9FAADD6C24411815007C9B27 /* Sources */,
 				9FAADD6D24411815007C9B27 /* Frameworks */,
 				9FAADD6E24411815007C9B27 /* Resources */,
@@ -704,6 +769,7 @@
 					};
 					9FAADD6F24411815007C9B27 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 9FAADD4B24411810007C9B27;
 					};
 				};
@@ -803,6 +869,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9F56C380244CA485006B6CD2 /* Mock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Mock;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file; change \"${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name\nOUTPUT_FILE=\"./${PROJECT_NAME}Tests/CuckooMocks/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory; change \"${PROJECT_NAME}\" to your project's root source folder, if it's not the default name\nINPUT_DIR=\"./${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files; include as many input files as you'd like to create mocks for\n${PODS_ROOT}/Cuckoo/run generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Networking/NetworkingProtocols.swift\" \\\n\"${INPUT_DIR}/Helper/CoreData/CoreDataManagerProtocol.swift\" \\\n\"${INPUT_DIR}/FactsView/FactsProtocols.swift\"\n";
 		};
 		9FAADD9324427EC9007C9B27 /* Mock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -983,7 +1067,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F56C394244CA8CD006B6CD2 /* FactsProtocols.swift in Sources */,
+				9F56C389244CA893006B6CD2 /* NorrisColors.swift in Sources */,
+				9F56C388244CA88F006B6CD2 /* NorrisImages.swift in Sources */,
+				9F56C3A8244CA95A006B6CD2 /* SceneDelegate.swift in Sources */,
+				9F56C3A4244CA931006B6CD2 /* String+Ext.swift in Sources */,
+				9F56C38D244CA8B6006B6CD2 /* SearchDataSource.swift in Sources */,
+				9F56C382244CA85B006B6CD2 /* ErrorView.swift in Sources */,
+				9F56C39C244CA90E006B6CD2 /* RequestMethod.swift in Sources */,
+				9F56C3A3244CA92E006B6CD2 /* UIView+Ext.swift in Sources */,
+				9F56C397244CA8D5006B6CD2 /* FactsRepository.swift in Sources */,
+				9F56C398244CA8FA006B6CD2 /* AppCoordinator.swift in Sources */,
+				9F56C3A6244CA93B006B6CD2 /* FactCell.swift in Sources */,
+				9F56C391244CA8C6006B6CD2 /* FactsDataSource.swift in Sources */,
+				9F56C38B244CA8B1006B6CD2 /* SearchCell.swift in Sources */,
+				9F56C39D244CA912006B6CD2 /* HttpClient.swift in Sources */,
+				9F56C37C244C9E28006B6CD2 /* GeneratedMocks.swift in Sources */,
+				9F56C379244C98F0006B6CD2 /* FactsViewControllerUITests.swift in Sources */,
+				9F56C38A244CA8AE006B6CD2 /* SearchHeaderView.swift in Sources */,
+				9F56C386244CA886006B6CD2 /* NorrisStrings.swift in Sources */,
+				9F56C3A7244CA957006B6CD2 /* AppDelegate.swift in Sources */,
+				9F56C39F244CA918006B6CD2 /* HttpRequest.swift in Sources */,
+				9F56C385244CA86E006B6CD2 /* FactsCollectionModel.swift in Sources */,
+				9F56C390244CA8C3006B6CD2 /* FactCellViewModel.swift in Sources */,
+				9F56C383244CA867006B6CD2 /* FactModel.swift in Sources */,
+				9F56C392244CA8C8006B6CD2 /* FactsView.swift in Sources */,
+				9F56C39B244CA90A006B6CD2 /* NetworkingProtocols.swift in Sources */,
+				9F56C3A1244CA923006B6CD2 /* ManagedContext.swift in Sources */,
+				9F56C38C244CA8B3006B6CD2 /* SearchView.swift in Sources */,
+				9F56C37F244CA38B006B6CD2 /* FactCellViewModelFactory.swift in Sources */,
+				9F56C393244CA8CB006B6CD2 /* FactsViewModel.swift in Sources */,
 				9FAADD7524411815007C9B27 /* NorrisUITests.swift in Sources */,
+				9F56C3A5244CA934006B6CD2 /* UserDefaults+Ext.swift in Sources */,
+				9F56C39A244CA907006B6CD2 /* FactsEndpoint.swift in Sources */,
+				9F56C396244CA8D3006B6CD2 /* FactsPresenter.swift in Sources */,
+				9F56C399244CA903006B6CD2 /* CategoriesEndpoint.swift in Sources */,
+				9F56C3A2244CA926006B6CD2 /* CoreDataManagerProtocol.swift in Sources */,
+				9F56C38E244CA8B9006B6CD2 /* SearchViewModel.swift in Sources */,
+				9F56C395244CA8D0006B6CD2 /* FactsViewController.swift in Sources */,
+				9F56C384244CA86A006B6CD2 /* SuggestionsModel.swift in Sources */,
+				9F56C387244CA88B006B6CD2 /* NorrisFonts.swift in Sources */,
+				9F56C38F244CA8BD006B6CD2 /* TagView.swift in Sources */,
+				9F56C3A0244CA91F006B6CD2 /* CoreDataManager.swift in Sources */,
+				9F56C39E244CA915006B6CD2 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1348,7 @@
 			baseConfigurationReference = 319C4D199C830CA9CA3CE03F /* Pods-NorrisUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD42R8FHUC;
 				INFOPLIST_FILE = NorrisUITests/Info.plist;
@@ -1232,6 +1359,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NorrisUITests/NorrisUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Norris;
@@ -1243,6 +1372,7 @@
 			baseConfigurationReference = FD64D4C81D940A6801EDD13D /* Pods-NorrisUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MD42R8FHUC;
 				INFOPLIST_FILE = NorrisUITests/Info.plist;
@@ -1253,6 +1383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.btas.NorrisUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NorrisUITests/NorrisUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Norris;

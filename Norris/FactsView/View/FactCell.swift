@@ -27,6 +27,7 @@ class FactCell: UITableViewCell {
     private let shareButton: UIButton = {
         let button = UIButton()
         button.setImage(NorrisImages.shareIcon, for: .normal)
+        button.accessibilityLabel = "share_button"
         return button
     }()
     
@@ -46,6 +47,7 @@ class FactCell: UITableViewCell {
         contentView.addSubview(factLabel)
         contentView.addSubview(tagView)
         contentView.addSubview(shareButton)
+        accessibilityLabel = "fact_cell"
     }
     
     private func addConstraints() {

@@ -12,17 +12,19 @@ class FactsViewController: UIViewController, FactsViewControllerProtocol {
     
     private let presenter: FactsPresenterProtocol
     private let contentView: FactsView
-    private let searchController = UISearchController(searchResultsController: nil)
+    private let searchController: UISearchController
     private let suggestionsView: SearchView
     private let errorView: ErrorView
     
     init(presenter: FactsPresenterProtocol = FactsPresenter(),
          contentView: FactsView = FactsView(),
          suggestionsView: SearchView = SearchView(),
-         errorView: ErrorView = ErrorView()) {
+         errorView: ErrorView = ErrorView(),
+         searchController: UISearchController = UISearchController(searchResultsController: nil)) {
         self.presenter = presenter
         self.contentView = contentView
         self.suggestionsView = suggestionsView
+        self.searchController = searchController
         self.errorView = errorView
         super.init(nibName: nil, bundle: nil)
     }
