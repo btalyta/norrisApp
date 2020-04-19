@@ -19,5 +19,12 @@ class NorrisImagesTests: QuickSpec {
                 expect(NorrisImages.shareIcon).to(equal(expectedImage))
             }
         }
+        
+        describe("#errorIcon") {
+            it("return correct image") {
+                let expectedImage = UIImage(named: "errorIcon")
+                expect(NorrisImages.errorIcon).to(equal(expectedImage))
+            }
+        }
     }
 }

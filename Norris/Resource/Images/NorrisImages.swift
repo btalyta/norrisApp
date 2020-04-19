@@ -10,4 +10,5 @@ import UIKit
 
 class NorrisImages {
     static let shareIcon = UIImage(named: "shareIcon")
+    static let errorIcon = UIImage(named: "errorIcon")
 }

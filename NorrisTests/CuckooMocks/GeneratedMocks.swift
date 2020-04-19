@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-19 00:25:04 +0000
+// MARK: - Mocks generated from file: Norris/FactsView/FactsProtocols.swift at 2020-04-19 13:48:01 +0000
 
 //
 //  FactsProtocols.swift
@@ -489,16 +489,16 @@ import Foundation
     
     
     
-     func showError()  {
+     func showError(message: String)  {
         
-    return cuckoo_manager.call("showError()",
-            parameters: (),
-            escapingParameters: (),
+    return cuckoo_manager.call("showError(message: String)",
+            parameters: (message),
+            escapingParameters: (message),
             superclassCall:
                 
                 Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                 ,
-            defaultCall: __defaultImplStub!.showError())
+            defaultCall: __defaultImplStub!.showError(message: message))
         
     }
     
@@ -546,9 +546,9 @@ import Foundation
 	        return .init(stub: cuckoo_manager.createStub(for: MockFactsViewControllerProtocol.self, method: "showFacts(viewModel: FactsViewModel)", parameterMatchers: matchers))
 	    }
 	    
-	    func showError() -> Cuckoo.ProtocolStubNoReturnFunction<()> {
-	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-	        return .init(stub: cuckoo_manager.createStub(for: MockFactsViewControllerProtocol.self, method: "showError()", parameterMatchers: matchers))
+	    func showError<M1: Cuckoo.Matchable>(message: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(String)> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: message) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockFactsViewControllerProtocol.self, method: "showError(message: String)", parameterMatchers: matchers))
 	    }
 	    
 	    func wantsToShare<M1: Cuckoo.Matchable>(url: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(String)> where M1.MatchedType == String {
@@ -584,9 +584,9 @@ import Foundation
 	    }
 	    
 	    @discardableResult
-	    func showError() -> Cuckoo.__DoNotUse<(), Void> {
-	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-	        return cuckoo_manager.verify("showError()", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func showError<M1: Cuckoo.Matchable>(message: M1) -> Cuckoo.__DoNotUse<(String), Void> where M1.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String)>] = [wrap(matchable: message) { $0 }]
+	        return cuckoo_manager.verify("showError(message: String)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	    @discardableResult
@@ -614,7 +614,7 @@ import Foundation
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
-     func showError()   {
+     func showError(message: String)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
@@ -629,7 +629,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: Norris/Helper/CoreData/CoreDataManagerProtocol.swift at 2020-04-19 00:25:04 +0000
+// MARK: - Mocks generated from file: Norris/Helper/CoreData/CoreDataManagerProtocol.swift at 2020-04-19 13:48:01 +0000
 
 //
 //  CoreDataManagerProtocol.swift
@@ -824,7 +824,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-19 00:25:04 +0000
+// MARK: - Mocks generated from file: Norris/Networking/NetworkingProtocols.swift at 2020-04-19 13:48:01 +0000
 
 //
 //  NetworkingProtocols.swift

@@ -10,4 +10,5 @@ import Foundation
 
 struct FactsViewModel: Equatable {
     let cells: [FactCellViewModel]
+    let isLoading: Bool
 }

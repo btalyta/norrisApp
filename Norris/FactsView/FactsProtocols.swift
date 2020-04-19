@@ -26,7 +26,7 @@ protocol FactsPresenterProtocol: class {
 
 protocol FactsViewControllerProtocol: class {
     func showFacts(viewModel: FactsViewModel)
-    func showError()
+    func showError(message: String)
     func wantsToShare(url: String)
     func showSuggestions(viewModel: [SearchViewModel])
 }

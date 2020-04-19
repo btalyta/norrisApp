@@ -28,7 +28,7 @@ class FactsPresenterTests: QuickSpec {
             sut.viewController = controllerMock
             
             stub(controllerMock) { stub in
-                when(stub.showError()).thenDoNothing()
+                when(stub.showError(message: anyString())).thenDoNothing()
                 when(stub.showFacts(viewModel: any(FactsViewModel.self))).thenDoNothing()
                 when(stub.wantsToShare(url: anyString())).thenDoNothing()
                 when(stub.showSuggestions(viewModel: any([SearchViewModel].self))).thenDoNothing()
@@ -106,7 +106,7 @@ class FactsPresenterTests: QuickSpec {
                         let expectedModel = makeViewModel(with: [model])
                         sut.wantsToSearch(with: index)
                         
-                        verify(controllerMock).showFacts(viewModel: captor.capture())
+                        verify(controllerMock, times(2)).showFacts(viewModel: captor.capture())
                         expect(captor.value).to(equal(expectedModel))
                     }
                 }
@@ -116,7 +116,7 @@ class FactsPresenterTests: QuickSpec {
                         let index = IndexPath(row: 0, section: 0)
                         sut.wantsToSearch(with: index)
                         
-                        verify(controllerMock).showError()
+                        verify(controllerMock).showError(message: anyString())
                     }
                 }
             }
@@ -130,7 +130,7 @@ class FactsPresenterTests: QuickSpec {
                         let expectedModel = makeViewModel(with: [model, model, model])
                         sut.wantsToSearch(with: index)
                         
-                        verify(controllerMock).showFacts(viewModel: captor.capture())
+                        verify(controllerMock, times(2)).showFacts(viewModel: captor.capture())
                         expect(captor.value).to(equal(expectedModel))
                     }
                 }
@@ -140,7 +140,7 @@ class FactsPresenterTests: QuickSpec {
                         let index = IndexPath(row: 0, section: 1)
                         sut.wantsToSearch(with: index)
                         
-                        verify(controllerMock).showError()
+                        verify(controllerMock).showError(message: anyString())
                     }
                 }
             }
@@ -159,7 +159,7 @@ class FactsPresenterTests: QuickSpec {
                     let expectedModel = makeViewModel(with: [model, model, model])
                     sut.wantsToSearch(text: "")
                     
-                    verify(controllerMock).showFacts(viewModel: captor.capture())
+                    verify(controllerMock, times(2)).showFacts(viewModel: captor.capture())
                     expect(captor.value).to(equal(expectedModel))
                 }
             }
@@ -168,7 +168,7 @@ class FactsPresenterTests: QuickSpec {
                     stubSearchText(with: false)
                     sut.wantsToSearch(text: "")
                     
-                    verify(controllerMock).showError()
+                    verify(controllerMock).showError(message: anyString())
                 }
             }
             context("when there is new text") {
@@ -241,7 +241,7 @@ class FactsPresenterTests: QuickSpec {
                 return FactCellViewModel(fact: $0.value,
                                          tag: $0.categories?.first ?? NorrisStrings.uncategorized)
             }
-            return FactsViewModel(cells: viewModel)
+            return FactsViewModel(cells: viewModel, isLoading: false)
         }
     }
 }

@@ -12,3 +12,5 @@
 "search" = "Search";
 "categories"= "Categories";
 "history" = "History";
+"errorTitle" = "Oops...\nSomething is wrong.";
+"tryAgain" = "Try again";

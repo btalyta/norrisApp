@@ -27,8 +27,8 @@ class HttpClient: HttpClientProtocol {
         }
 
         let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
-            if let serviceError = error {
-                completion?(Result.failure(serviceError))
+            if error != nil {
+                completion?(Result.failure(APIError.service))
                 return
             }
             
@@ -50,7 +50,7 @@ class HttpClient: HttpClientProtocol {
             case 401:
                 completion?(Result.failure(APIError.unauthorized))
             case 503:
-                completion?(Result.failure(APIError.server))
+                completion?(Result.failure(APIError.service))
             default:
                 completion?(Result.failure(APIError.invalidData))
             }

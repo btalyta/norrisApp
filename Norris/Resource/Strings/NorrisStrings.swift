@@ -22,4 +22,6 @@ class NorrisStrings {
     static let search = localized(for: "search")
     static let categories = localized(for: "categories")
     static let history = localized(for: "history")
+    static let errorTitle = localized(for: "errorTitle")
+    static let tryAgain = localized(for: "tryAgain")
 }

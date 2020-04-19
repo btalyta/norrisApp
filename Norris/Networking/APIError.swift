@@ -13,26 +13,20 @@ enum APIError: Error, Equatable {
     case invalidData
     case timeout
     case unauthorized
-    case server
+    case service
     case request
     case decode
     
     var localizedDescription: String {
         switch self {
-        case .invalidData:
-            return "Invalid data."
         case .timeout:
             return "Connection error."
         case .unauthorized:
             return "Unauthorized."
-        case .jsonConversionFailure:
-            return "JSON conversion failure."
-        case .server:
-            return "Unavailable service."
-        case .request:
-            return "Invalid request."
-        case .decode:
-            return "Invalid decoding data"
+        case .service, .request:
+            return "Could not connect to the server."
+        case .decode, .jsonConversionFailure, .invalidData:
+            return "Could not display results."
         }
     }
 }
