@@ -12,3 +12,15 @@ The coordinator is responsible for managing the navigation flow in the app.  The
 - SwiftLint: Enforce coding styles
 - Quick & Nimble: Unit test
 - KIF: To make simple UI tests
+
+### Installation:
+
+It requires iOS 13, xCode 11 and CocoaPods.
+
+Clone the repo and install the dependencies:
+
+```
+git clone https://github.com/btalyta/norrisApp.git
+cd norrisApp
+pod install
+```
