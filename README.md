@@ -15,7 +15,7 @@ The coordinator is responsible for managing the navigation flow in the app.  The
 
 ### Installation:
 
-It requires iOS 13, xCode 11 and CocoaPods.
+It requires iOS 13, Xcode 11 and CocoaPods.
 
 Clone the repo and install the dependencies:
 
